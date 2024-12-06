@@ -28,6 +28,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class MusaResource extends Resource
@@ -35,6 +36,8 @@ class MusaResource extends Resource
     protected static ?string $model = Musa::class;
 
     protected static ?string $slug = 'health-insurance';
+
+    protected static ?string $recordTitleAttribute = 'head_of_family_name';
 
     protected static ?string $navigationLabel = 'Health Insurance';
 
@@ -133,7 +136,17 @@ class MusaResource extends Resource
 
     public static function getGloballySearchableAttributes(): array
     {
-        return [];
+        return [
+            'head_of_family_name', 'national_id',
+        ];
+    }
+
+    public static function getGlobalSearchResultDetails(Model $record): array
+    {
+        return [
+            'Names' => $record->head_of_family_name,
+            'National Id' => $record->national_id,
+        ];
     }
 
     public static function getBeneficiaryInformationSchema(): array
