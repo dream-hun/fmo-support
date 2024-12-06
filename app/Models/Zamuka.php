@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Zamuka extends Model
@@ -22,4 +23,9 @@ class Zamuka extends Model
         'main_source_of_income',
         'entrance_year',
     ];
+
+    public function zamukaSupports(): HasMany
+    {
+        return $this->hasMany(ZamukaSupport::class, 'zamuka_id');
+    }
 }
