@@ -7,6 +7,7 @@ use App\Models\Mvtc;
 use Exception;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -45,7 +46,10 @@ class MvtcResource extends Resource
                     TextInput::make('name')
                         ->required(),
 
-                    TextInput::make('gender'),
+                    Select::make('gender')->options([
+                        'male' => 'Male',
+                        'femal' => 'Female',
+                    ])->native('false'),
 
                     TextInput::make('dob'),
 
@@ -65,12 +69,20 @@ class MvtcResource extends Resource
 
                     TextInput::make('education_level'),
 
-                    TextInput::make('scholar_type'),
+                    Select::make('scholar_type')->label('Scholarship Status')->options([
+                        'private' => 'Private',
+                        'full-scholrarship' => 'Full Scholarship',
+                        'partial-scholarship' => 'Partial Scholarship',
+                    ])->native(false),
 
                     TextInput::make('intake'),
                     TextInput::make('graduation_date'),
 
-                    TextInput::make('status'),
+                    Select::make('status')->options([
+                        'inprogress' => 'In progress',
+                        'graduated' => 'Graduated',
+                        'dropped-out' => 'Dropped out',
+                    ])->native(false)->label('Training Status'),
 
                     Placeholder::make('created_at')
                         ->label('Created Date')
