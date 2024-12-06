@@ -33,7 +33,7 @@ class MvtcResource extends Resource
 
     protected static ?string $slug = 'mvtc-students';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-cog';
 
     public static function form(Form $form): Form
     {

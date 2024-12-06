@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.2",
         "andreiio/blade-remix-icon": "^3.5",
+        "codeat3/blade-game-icons": "^1.4",
         "codeat3/blade-phosphor-icons": "^2.2",
         "filament/filament": "^3.2.127",
         "laravel/framework": "^11.34.2",

@@ -19,7 +19,7 @@ class ToolkitResource extends Resource
 {
     protected static ?string $model = Toolkit::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-cog';
+    protected static ?string $navigationIcon = 'gameicon-mighty-spanner';
 
     protected static ?string $navigationLabel = 'Toolkits Beneficiaries';
 
