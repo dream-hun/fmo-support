@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
             TreesSeeder::class,
             TreeSupportSeeder::class,
             SchoolFeedingSeeder::class,
+            SchoolFeedingSupport::class,
         ]);
     }
 }

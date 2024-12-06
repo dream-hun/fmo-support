@@ -70,7 +70,7 @@ class SchoolFeedingResource extends Resource
                     Placeholder::make('updated_at')
                         ->label('Last Modified Date')
                         ->content(fn (?SchoolFeeding $record): string => $record?->updated_at?->diffForHumans() ?? '-'),
-                ]) ->columnSpan(['lg' => 1])
+                ])->columnSpan(['lg' => 1])
                     ->hidden(fn (?SchoolFeeding $record) => $record === null),
 
             ])->columns(3);
@@ -180,14 +180,14 @@ class SchoolFeedingResource extends Resource
     {
         return Repeater::make('schoolFeedingPayments')
             ->relationship()->schema([
-            TextInput::make('academic_year')->required(),
-            TextInput::make('trimester')->required(),
-            TextInput::make('amount')->required()->default(19000)->numeric(),
-            Select::make('status')->default('pending')->options([
-                'pending' => 'Pending',
-                'paid' => 'Paid',
-            ])->native(false),
+                TextInput::make('academic_year')->required(),
+                TextInput::make('trimester')->required(),
+                TextInput::make('amount')->required()->default(19000)->numeric(),
+                Select::make('status')->default('pending')->options([
+                    'pending' => 'Pending',
+                    'paid' => 'Paid',
+                ])->native(false),
 
-        ])->columns(2);
+            ])->columns(2);
     }
 }

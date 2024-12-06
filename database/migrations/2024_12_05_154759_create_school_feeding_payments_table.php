@@ -14,11 +14,12 @@ return new class extends Migration
             $table->string('academic_year');
             $table->string('trimester');
             $table->string('amount')->nullable();
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
     }
+
     public function down(): void
     {
         Schema::dropIfExists('school_feeding_payments');

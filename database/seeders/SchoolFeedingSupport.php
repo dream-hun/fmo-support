@@ -5,14 +5,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class SchoolFeedingSeeder extends Seeder
+class SchoolFeedingSupport extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $csvFile = database_path('seeders/data/schoolfeeding.csv');
+        $csvFile = database_path('seeders/data/school-feeding-payment.csv');
 
         if (! file_exists($csvFile) || ! is_readable($csvFile)) {
             $this->command->error("CSV file does not exist or is not readable: $csvFile");
@@ -41,16 +41,11 @@ class SchoolFeedingSeeder extends Seeder
         while (($row = fgetcsv($handle)) !== false) {
 
             $newRecords[] = [
-                'name' => $row[1],
-                'grade' => $row[2] ?: null,
-                'gender' => $row[3] ?: null,
-                'school' => $row[4] ?: null,
-                'district' => $row[5],
-                'sector' => $row[6] ?: null,
-                'cell' => $row[7] ?: null,
-                'village' => $row[8] ?: null,
-                'father_name' => $row[9] ?: null,
-                'mother_name' => $row[10] ?: null,
+                'school_feeding_id' => $row[0],
+                'academic_year' => $row[1],
+                'trimester' => $row[2] ?: null,
+                'amount' => $row[3],
+                'status' => $row[4] ?: null,
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
@@ -60,7 +55,7 @@ class SchoolFeedingSeeder extends Seeder
         fclose($handle);
 
         if (! empty($newRecords)) {
-            DB::table('school_feedings')->insert($newRecords);
+            DB::table('school_feeding_payments')->insert($newRecords);
             $this->command->info('School feeding data seeded successfully.');
         } else {
             $this->command->warn('No valid data rows found in the CSV file after the header or all rows are duplicates.');

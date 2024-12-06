@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('grade')->nullable();
+            $table->string('gender')->nullable();
             $table->string('school');
             $table->string('district');
             $table->string('sector')->nullable();
@@ -19,7 +20,6 @@ return new class extends Migration
             $table->string('village')->nullable();
             $table->string('father_name')->nullable();
             $table->string('mother_name')->nullable();
-            $table->string('gender')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
