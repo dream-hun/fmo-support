@@ -181,7 +181,11 @@ class SchoolFeedingResource extends Resource
         return Repeater::make('schoolFeedingPayments')
             ->relationship()->schema([
                 TextInput::make('academic_year')->required(),
-                TextInput::make('trimester')->required(),
+                Select::make('trimester')->options([
+                    '1' => 'Trimester I',
+                    '2' => 'Trimester II',
+                    '3' => 'Trimester III',
+                ])->required(),
                 TextInput::make('amount')->required()->default(19000)->numeric(),
                 Select::make('status')->default('pending')->options([
                     'pending' => 'Pending',
