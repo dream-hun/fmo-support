@@ -185,7 +185,7 @@ class SchoolFeedingResource extends Resource
                     '1' => 'Trimester I',
                     '2' => 'Trimester II',
                     '3' => 'Trimester III',
-                ])->required(),
+                ])->required()->native(false),
                 TextInput::make('amount')->required()->default(19000)->numeric(),
                 Select::make('status')->default('pending')->options([
                     'pending' => 'Pending',
