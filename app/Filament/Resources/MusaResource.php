@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MusaResource\Pages;
 use App\Models\Musa;
+use Carbon\Carbon;
 use Exception;
 use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\DatePicker;
@@ -25,6 +26,7 @@ use Filament\Tables\Actions\ForceDeleteBulkAction;
 use Filament\Tables\Actions\RestoreAction;
 use Filament\Tables\Actions\RestoreBulkAction;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -87,17 +89,40 @@ class MusaResource extends Resource
                 TextColumn::make('national_id'),
 
                 TextColumn::make('total_family_members'),
-
-                TextColumn::make('district'),
-
-                TextColumn::make('sector'),
-
-                TextColumn::make('cell'),
-
-                TextColumn::make('village'),
             ])
             ->filters([
                 TrashedFilter::make(),
+                Filter::make('date_of_support')
+                    ->form([
+                        DatePicker::make('start_date')
+                            ->placeholder(fn ($state): string => 'Start Date'),
+                        DatePicker::make('end_date')
+                            ->placeholder(fn ($state): string => 'End Date'),
+                    ])
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query->whereHas('supports', function (Builder $subQuery) use ($data) {
+                            $subQuery
+                                ->when(
+                                    $data['start_date'] ?? null,
+                                    fn (Builder $q, $date): Builder => $q->whereDate('date_of_support', '>=', $date)
+                                )
+                                ->when(
+                                    $data['end_date'] ?? null,
+                                    fn (Builder $q, $date): Builder => $q->whereDate('date_of_support', '<=', $date)
+                                );
+                        });
+                    })
+                    ->indicateUsing(function (array $data): array {
+                        $indicators = [];
+                        if ($data['start_date'] ?? null) {
+                            $indicators['start_date'] = 'Support from ' . Carbon::parse($data['start_date'])->toFormattedDateString();
+                        }
+                        if ($data['end_date'] ?? null) {
+                            $indicators['end_date'] = 'Support until ' . Carbon::parse($data['end_date'])->toFormattedDateString();
+                        }
+
+                        return $indicators;
+                    }),
             ])
             ->actions([
                 ActionGroup::make([
