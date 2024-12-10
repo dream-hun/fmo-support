@@ -8,11 +8,4 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateEcd extends CreateRecord
 {
     protected static string $resource = EcdResource::class;
-
-    protected function getHeaderActions(): array
-    {
-        return [
-
-        ];
-    }
 }

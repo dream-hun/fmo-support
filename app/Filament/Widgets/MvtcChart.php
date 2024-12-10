@@ -9,27 +9,25 @@ class MvtcChart extends ApexChartWidget
 {
     /**
      * Chart Id
-     *
-     * @var string
      */
     protected static ?string $chartId = 'mvtcChart';
 
     /**
      * Widget Title
-     *
-     * @var string|null
      */
     protected static ?string $heading = 'MVTC Students Registration';
 
-    protected static ?string $footer = 'Total MVTC student registered on every intake.';
-    protected static ?string $pollingInterval = '10s';
+    protected int|string|array $columnSpan = 'full';
 
+    protected static ?string $footer = 'Total MVTC student registered on every intake.';
+
+    protected static ?int $sort = 1;
+
+    protected static ?string $pollingInterval = '10s';
 
     /**
      * Chart options (series, labels, types, size, animations...)
      * https://apexcharts.com/docs/options
-     *
-     * @return array
      */
     protected function getOptions(): array
     {
@@ -38,6 +36,7 @@ class MvtcChart extends ApexChartWidget
             ->groupBy('intake')
             ->orderBy('intake')
             ->get();
+
         return [
             'chart' => [
                 'type' => 'bar',
@@ -45,7 +44,7 @@ class MvtcChart extends ApexChartWidget
             ],
             'series' => [
                 [
-                    'data'=>$data->pluck('count'),
+                    'data' => $data->pluck('count'),
                     'name' => 'Registered students',
 
                 ],
@@ -65,7 +64,7 @@ class MvtcChart extends ApexChartWidget
                     ],
                 ],
             ],
-            'colors' => ['#f59e0b'],
+            'colors' => ['#b2071b'],
             'plotOptions' => [
                 'bar' => [
                     'borderRadius' => 3,

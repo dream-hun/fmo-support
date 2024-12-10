@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Ecd extends Model
@@ -25,4 +26,9 @@ class Ecd extends Model
         'home_phone_number',
 
     ];
+
+    public function academicInformations(): HasMany
+    {
+        return $this->hasMany(EcdAcademicInfo::class);
+    }
 }

@@ -47,9 +47,9 @@ class MvtcResource extends Resource
                         ->required(),
 
                     Select::make('gender')->options([
-                        'male' => 'Male',
-                        'femal' => 'Female',
-                    ])->native('false'),
+                        'MALE' => 'Male',
+                        'FEMALE' => 'Female',
+                    ])->native(false),
 
                     TextInput::make('dob'),
 
@@ -70,16 +70,16 @@ class MvtcResource extends Resource
                     TextInput::make('education_level'),
 
                     Select::make('scholar_type')->label('Scholarship Status')->options([
-                        'private' => 'Private',
-                        'full-scholrarship' => 'Full Scholarship',
-                        'partial-scholarship' => 'Partial Scholarship',
+                        'Private' => 'Private',
+                        'Full Scholarship' => 'Full Scholarship',
+                        'Partial Scholarship' => 'Partial Scholarship',
                     ])->native(false),
 
                     TextInput::make('intake'),
                     TextInput::make('graduation_date'),
 
                     Select::make('status')->options([
-                        'inprogress' => 'In progress',
+                        'in-progress' => 'In progress',
                         'graduated' => 'Graduated',
                         'dropped-out' => 'Dropped out',
                     ])->native(false)->label('Training Status'),

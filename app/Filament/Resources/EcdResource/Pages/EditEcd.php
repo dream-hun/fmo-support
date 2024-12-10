@@ -3,9 +3,7 @@
 namespace App\Filament\Resources\EcdResource\Pages;
 
 use App\Filament\Resources\EcdResource;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\ForceDeleteAction;
-use Filament\Actions\RestoreAction;
+use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
 class EditEcd extends EditRecord
@@ -15,9 +13,8 @@ class EditEcd extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            DeleteAction::make(),
-            ForceDeleteAction::make(),
-            RestoreAction::make(),
+            Actions\ViewAction::make(),
+            Actions\DeleteAction::make(),
         ];
     }
 }

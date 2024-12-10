@@ -10,16 +10,18 @@
         "andreiio/blade-remix-icon": "^3.5",
         "codeat3/blade-game-icons": "^1.4",
         "codeat3/blade-phosphor-icons": "^2.2",
-        "filament/filament": "^3.2.127",
+        "eightynine/filament-excel-import": "^3.1",
+        "filament/filament": "^3.2.128",
         "flowframe/laravel-trend": "^0.3.0",
-        "hammerstone/fast-paginate": "^1.1",
+        "hammerstone/fast-paginate": "^1.1.1",
         "laravel/framework": "^11.34.2",
         "laravel/octane": "^2.6",
         "laravel/tinker": "^2.10",
-        "leandrocfe/filament-apex-charts": "^3.1"
+        "leandrocfe/filament-apex-charts": "^3.1.4",
+        "pxlrbt/filament-excel": "^2.3"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.14",
+        "barryvdh/laravel-debugbar": "^3.14.9",
         "beyondcode/laravel-query-detector": "^2.0",
         "fakerphp/faker": "^1.24.1",
         "laravel/pail": "^1.2.1",

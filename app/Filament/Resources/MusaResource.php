@@ -115,10 +115,10 @@ class MusaResource extends Resource
                     ->indicateUsing(function (array $data): array {
                         $indicators = [];
                         if ($data['start_date'] ?? null) {
-                            $indicators['start_date'] = 'Support from ' . Carbon::parse($data['start_date'])->toFormattedDateString();
+                            $indicators['start_date'] = 'Support from '.Carbon::parse($data['start_date'])->toFormattedDateString();
                         }
                         if ($data['end_date'] ?? null) {
-                            $indicators['end_date'] = 'Support until ' . Carbon::parse($data['end_date'])->toFormattedDateString();
+                            $indicators['end_date'] = 'Support until '.Carbon::parse($data['end_date'])->toFormattedDateString();
                         }
 
                         return $indicators;
