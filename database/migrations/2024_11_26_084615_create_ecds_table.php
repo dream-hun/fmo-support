@@ -11,10 +11,8 @@ return new class extends Migration
         Schema::create('ecds', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('grade')->nullable();
             $table->string('gender')->nullable();
             $table->string('birthday')->nullable();
-            $table->string('academic_year')->nullable();
             $table->string('district')->nullable();
             $table->string('sector')->nullable();
             $table->string('cell')->nullable();

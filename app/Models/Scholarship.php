@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Scholarship extends Model
@@ -27,4 +28,9 @@ class Scholarship extends Model
         'school_contact',
         'status',
     ];
+
+    public function scholarshipSupports(): HasMany
+    {
+        return $this->hasMany(ScholarshipSupport::class, 'scholarship_id');
+    }
 }

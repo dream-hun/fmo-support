@@ -5,11 +5,16 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ScholarshipResource\Pages;
 use App\Models\Scholarship;
 use Exception;
+use Filament\Forms\Components\Actions\Action;
+use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\BulkActionGroup;
@@ -38,79 +43,42 @@ class ScholarshipResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Section::make()->schema([
-                    TextInput::make('name')
-                        ->required(),
+            ->schema([Group::make()
+                ->schema([
+                    Section::make()
+                        ->schema(static::getStudentInformations())
+                        ->columns(3),
 
-                    Select::make('gender')->options([
-                        'M' => 'Male',
-                        'F' => 'Female',
-                    ])->native(false)->required(),
+                    Section::make('Scholarship Support')
+                        ->headerActions([
+                            Action::make('reset')
+                                ->modalHeading('Are you sure?')
+                                ->modalDescription('All existing support will be removed from the beneficiary.')
+                                ->requiresConfirmation()
+                                ->color('danger')
+                                ->action(fn (Set $set) => $set('', [])),
+                        ])
+                        ->schema([
+                            static::getScholarshipSupport(),
+                        ]),
+                ])
+                ->columnSpan(['lg' => fn (?Scholarship $record) => $record === null ? 3 : 2]),
 
-                    TextInput::make('national_id_number')
-                        ->integer()
-                        ->minLength(16)
-                        ->maxLength(16)
-                        ->required(),
+                Section::make()
+                    ->schema([
+                        Placeholder::make('created_at')
+                            ->label('Created at')
+                            ->content(fn (Scholarship $record): ?string => $record->created_at?->diffForHumans()),
 
-                    TextInput::make('district')
-                        ->default('Bugesera')
-                        ->required(),
+                        Placeholder::make('updated_at')
+                            ->label('Last modified at')
+                            ->content(fn (Scholarship $record): ?string => $record->updated_at?->diffForHumans()),
+                    ])
+                    ->columnSpan(['lg' => 1])
+                    ->hidden(fn (?Scholarship $record) => $record === null),
+            ])
+            ->columns(3);
 
-                    TextInput::make('sector')
-                        ->required(),
-
-                    TextInput::make('cell')
-                        ->required(),
-
-                    TextInput::make('village')
-                        ->required(),
-
-                    TextInput::make('telephone')
-                        ->required(),
-
-                    TextInput::make('email')
-                        ->required(),
-
-                    TextInput::make('university_attended')
-                        ->required(),
-
-                    TextInput::make('faculty')
-                        ->required(),
-
-                    TextInput::make('program_duration')
-                        ->default('4 Years')
-                        ->required(),
-
-                    TextInput::make('year_of_entrance')
-                        ->required(),
-
-                    TextInput::make('intake')
-                        ->required(),
-
-                    TextInput::make('school_contact')
-                        ->required(),
-
-                    Select::make('status')
-                        ->options([
-                            'Inprogress' => 'Inprogress',
-                            'Graduated' => 'Graduated',
-                            'Dropped-out' => 'Dropped out',
-                        ])->native(false)
-                        ->default('In Progress')
-                        ->required(),
-
-                    Placeholder::make('created_at')
-                        ->label('Created Date')
-                        ->content(fn (?Scholarship $record): string => $record?->created_at?->diffForHumans() ?? '-'),
-
-                    Placeholder::make('updated_at')
-                        ->label('Last Modified Date')
-                        ->content(fn (?Scholarship $record): string => $record?->updated_at?->diffForHumans() ?? '-'),
-                ])->columns(3),
-
-            ]);
     }
 
     /**
@@ -133,6 +101,7 @@ class ScholarshipResource extends Resource
             ])
             ->filters([
                 TrashedFilter::make(),
+
             ])
             ->actions([ActionGroup::make([
                 EditAction::make(),
@@ -180,5 +149,84 @@ class ScholarshipResource extends Resource
             'University' => $record->university_attended,
             'Contact' => $record->telephone,
         ];
+    }
+
+    private static function getStudentInformations(): array
+    {
+        return [
+            TextInput::make('name')
+                ->required(),
+
+            Select::make('gender')->options([
+                'M' => 'Male',
+                'F' => 'Female',
+            ])->native(false)->required(),
+
+            TextInput::make('national_id_number')
+                ->integer()
+                ->minLength(16)
+                ->maxLength(16)
+                ->required(),
+
+            TextInput::make('district')
+                ->default('Bugesera')
+                ->required(),
+
+            TextInput::make('sector')
+                ->required(),
+
+            TextInput::make('cell')
+                ->required(),
+
+            TextInput::make('village')
+                ->required(),
+
+            TextInput::make('telephone')
+                ->required(),
+
+            TextInput::make('email')
+                ->required(),
+
+            TextInput::make('university_attended')
+                ->required(),
+
+            TextInput::make('faculty')
+                ->required(),
+
+            TextInput::make('program_duration')
+                ->default('4 Years')
+                ->required(),
+
+            TextInput::make('year_of_entrance')
+                ->required(),
+
+            TextInput::make('intake')
+                ->required(),
+
+            TextInput::make('school_contact')
+                ->required(),
+
+            Select::make('status')
+                ->options([
+                    'Inprogress' => 'In Progress',
+                    'Graduated' => 'Graduated',
+                    'Dropped-out' => 'Dropped out',
+                ])->native(false)
+                ->default('In Progress')
+                ->required(),
+
+        ];
+    }
+
+    private static function getScholarshipSupport(): Repeater
+    {
+        return Repeater::make('scholarshipSupports')->relationship()->schema([
+            TextInput::make('academic_year'),
+            Select::make('support')->options([
+                'tuition' => 'Tuition Fees',
+                'internship' => 'Internship Fees',
+            ])->multiple()->native(false)->required(),
+            RichEditor::make('comment')->maxLength(600),
+        ]);
     }
 }

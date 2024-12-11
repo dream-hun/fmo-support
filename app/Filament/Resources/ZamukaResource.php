@@ -6,11 +6,12 @@ use App\Filament\Resources\ZamukaResource\Pages;
 use App\Models\Zamuka;
 use Exception;
 use Filament\Forms\Components\Actions\Action;
-use Filament\Forms\Components\CheckboxList;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -84,27 +85,11 @@ class ZamukaResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('head_of_household_name'),
-
-                TextColumn::make('household_id_number'),
-
-                TextColumn::make('spouse_name'),
-
-                TextColumn::make('spouse_id_number'),
-
-                TextColumn::make('sector'),
-
-                TextColumn::make('cell'),
-
-                TextColumn::make('village'),
-
-                TextColumn::make('house_hold_phone'),
-
+                TextColumn::make('head_of_household_name')->searchable(),
+                TextColumn::make('household_id_number')->searchable(),
+                TextColumn::make('house_hold_phone')->searchable(),
                 TextColumn::make('family_size'),
-
-                TextColumn::make('main_source_of_income'),
-
-                TextColumn::make('entrance_year'),
+                TextColumn::make('entrance_year')->sortable(),
             ])
             ->filters([
                 TrashedFilter::make(),
@@ -197,19 +182,20 @@ class ZamukaResource extends Resource
     private static function getBeneficiarySupport(): Repeater
     {
         return Repeater::make('zamukaSupports')->relationship()->schema([
-            CheckboxList::make('support_given')->options([
-                'house' => '<span class="text-blue-500">House</span>',
-                'equipments' => '<span class="text-green-500">Home Equipments</span>',
-                'bicycle' => '<span class="text-red-500">Bicycle</span>',
-                'cowshed' => '<span class="text-pink-500">Cowshed</span>',
-                'cow' => '<span class="text-pink-500">Cow</span>',
-                'goats' => '<span class="text-pink-500">Goat</span>',
-                'furnitures' => '<span class="text-pink-500">Furnitures</span>',
-                'school-feeding' => '<span class="text-pink-500">School Feeding Kids</span>',
-                'food' => '<span class="text-pink-500">Food Support</span>',
-            ])->columns(2)
-                ->searchable()
-                ->allowHtml(),
+            DatePicker::make('done_at')->maxDate(now())->required()->placeholder('Choose date')
+                ->native(false),
+            Select::make('support_given')->options([
+                'house' => 'House',
+                'equipments' => 'Home Equipments',
+                'bicycle' => 'Bicycle',
+                'cowshed' => 'Cowshed',
+                'cow' => 'Cow',
+                'goats' => 'Goats',
+                'furnitures' => 'Furnitures',
+                'school-feeding' => 'School Feeding Kids',
+                'food' => 'Food Support',
+
+            ])->required()->native(false),
             Textarea::make('notes'),
         ]);
     }

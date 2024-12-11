@@ -139,7 +139,7 @@ class EcdResource extends Resource
 
     public static function getGloballySearchableAttributes(): array
     {
-        return ['name', 'ecdAcademicInfos.academic_year', 'father_name', 'mother_name', 'father_id_number'];
+        return ['name', 'academicInformations.academic_year', 'father_name', 'mother_name', 'father_id_number'];
     }
 
     public static function getGlobalSearchResultDetails(Model $record): array

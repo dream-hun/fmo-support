@@ -43,7 +43,7 @@ class MembersChart extends ApexChartWidget
                 ],
             ],
             'xaxis' => [
-                'categories' => $data->pluck('code')->toArray(),
+                'categories' => $data->pluck('name')->toArray(),
                 'labels' => [
                     'style' => [
                         'fontFamily' => 'inherit',

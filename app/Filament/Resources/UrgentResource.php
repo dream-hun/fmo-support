@@ -34,9 +34,11 @@ class UrgentResource extends Resource
 {
     protected static ?string $model = Urgent::class;
 
-    protected static ?string $slug = 'urgents';
+    protected static ?string $slug = 'urgent-community-supports';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationLabel = 'Urgent Community Supports';
+
+    protected static ?string $navigationIcon = 'heroicon-o-users';
 
     public static function form(Form $form): Form
     {
@@ -163,6 +165,8 @@ class UrgentResource extends Resource
                 Select::make('support_received')
                     ->options([
                         'Food support' => 'Food Support',
+                        'Medical Support' => 'Medical Support',
+                        'Housing Material Support' => 'Housing Material Support',
                         'other-support' => 'Other Support',
 
                     ])->native(false),

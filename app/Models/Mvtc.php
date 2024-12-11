@@ -25,6 +25,7 @@ class Mvtc extends Model
         'scholar_type',
         'intake',
         'graduation_date',
+        'sponsor',
         'status',
     ];
 }

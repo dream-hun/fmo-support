@@ -20,7 +20,7 @@ class ListMvtcs extends ListRecords
         return [
             CreateAction::make()->label('Add new student')->icon('heroicon-s-plus-circle'),
             ExcelImportAction::make()
-                ->color("info")->icon('heroicon-o-arrow-down-on-square-stack'),
+                ->color('info')->icon('heroicon-o-arrow-down-on-square-stack'),
             ExportAction::make()
                 ->exports([
                     ExcelExport::make()

@@ -36,7 +36,8 @@ class MalnutritionResource extends Resource
 {
     protected static ?string $model = Malnutrition::class;
 
-    protected static ?string $slug = 'malnutritions';
+    protected static ?string $slug = 'malnutrition-control';
+    protected static ?string $navigationLabel = "Malnutrition Control";
 
     protected static ?string $recordTitleAttribute = 'name';
 

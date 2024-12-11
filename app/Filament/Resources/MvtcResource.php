@@ -77,6 +77,7 @@ class MvtcResource extends Resource
 
                     TextInput::make('intake'),
                     TextInput::make('graduation_date'),
+                    TextInput::make('sponsor')->label('Sponsor Name')->maxLength(255),
 
                     Select::make('status')->options([
                         'in-progress' => 'In progress',
@@ -107,7 +108,7 @@ class MvtcResource extends Resource
                 TextColumn::make('gender'),
                 TextColumn::make('trade')->sortable(),
                 TextColumn::make('scholar_type')->sortable(),
-                TextColumn::make('intake'),
+                TextColumn::make('intake')->sortable()->searchable(),
                 TextColumn::make('status')->sortable(),
             ])
             ->filters([

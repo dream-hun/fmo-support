@@ -20,7 +20,7 @@ class ListEcds extends ListRecords
         return [
             Actions\CreateAction::make(),
             ExcelImportAction::make()
-                ->color("info")->icon('heroicon-o-arrow-down-on-square-stack'),
+                ->color('info')->icon('heroicon-o-arrow-down-on-square-stack'),
             ExportAction::make()
                 ->exports([
                     ExcelExport::make()

@@ -11,7 +11,9 @@ return new class extends Migration
         Schema::create('zamuka_supports', function (Blueprint $table) {
             $table->id();
             $table->foreignId('zamuka_id')->constrained('zamukas');
-            $table->json('support_given')->nullable();
+            $table->date('done_at')->nullable();
+            $table->string('support_given')->nullable();
+            $table->string('value_of_support')->nullable();
             $table->longText('notes')->nullable();
             $table->timestamps();
             $table->softDeletes();

@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('scholar_type')->nullable();
             $table->string('intake')->nullable();
             $table->string('graduation_date')->nullable();
+            $table->string('sponsor')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
             $table->softDeletes();
