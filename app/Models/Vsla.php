@@ -33,4 +33,9 @@ class Vsla extends Model
     {
         return $this->hasMany(CreditTopUp::class, 'vsla_id');
     }
+
+    public function loans(): HasMany
+    {
+        return $this->hasMany(Loan::class, 'vsla_id');
+    }
 }

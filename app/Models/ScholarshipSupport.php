@@ -18,4 +18,8 @@ class ScholarshipSupport extends Model
     {
         return $this->belongsTo(Scholarship::class);
     }
+
+    protected $casts = [
+        'support' => 'array',
+    ];
 }

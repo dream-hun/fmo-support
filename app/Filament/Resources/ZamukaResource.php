@@ -196,6 +196,11 @@ class ZamukaResource extends Resource
                 'food' => 'Food Support',
 
             ])->required()->native(false),
+            TextInput::make('value_of_support')->numeric()
+                ->minValue(0)
+                ->required()
+                ->hintIcon('heroicon-o-question-mark-circle', 'A set of items should be mentioned as one(1)')
+                ->placeholder('Ex: Living room furnitures equal 1'),
             Textarea::make('notes'),
         ]);
     }

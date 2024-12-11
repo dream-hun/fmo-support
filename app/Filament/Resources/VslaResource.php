@@ -3,17 +3,14 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\VslaResource\Pages;
+use App\Filament\Resources\VslaResource\RelationManagers\CreditTopUpsRelationManager;
 use App\Models\Vsla;
 use Exception;
-use Filament\Forms\Components\Actions\Action;
-use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
-use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\BulkActionGroup;
@@ -50,21 +47,9 @@ class VslaResource extends Resource
                 Group::make()
                     ->schema([
                         Section::make()
-                            ->schema(static::getVslaInformations())
+                            ->schema(static::getVslaInformation())
                             ->columns(2),
 
-                        Section::make('Loan Top Up')
-                            ->headerActions([
-                                Action::make('reset')
-                                    ->modalHeading('Are you sure?')
-                                    ->modalDescription('All existing loan information will be removed from vsla.')
-                                    ->requiresConfirmation()
-                                    ->color('danger')
-                                    ->action(fn (Set $set) => $set('items', [])),
-                            ])
-                            ->schema([
-                                static::getTopUpInformations(),
-                            ]),
                     ])
                     ->columnSpan(['lg' => fn (?Vsla $record) => $record === null ? 3 : 2]),
 
@@ -132,6 +117,13 @@ class VslaResource extends Resource
         ];
     }
 
+    public static function getRelations(): array
+    {
+        return [
+            CreditTopUpsRelationManager::class,
+        ];
+    }
+
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()
@@ -153,7 +145,7 @@ class VslaResource extends Resource
         ];
     }
 
-    private static function getVslaInformations(): array
+    private static function getVslaInformation(): array
     {
         return [
             TextInput::make('code')
@@ -181,14 +173,5 @@ class VslaResource extends Resource
 
             TextInput::make('mou_sign_date'),
         ];
-    }
-
-    private static function getTopUpInformations(): Repeater
-    {
-        return Repeater::make('creditTopUps')->relationship()->schema([
-            TextInput::make('amount')->numeric()->minValue(0),
-            DatePicker::make('done_at')->native(false)->maxDate(now()),
-
-        ]);
     }
 }

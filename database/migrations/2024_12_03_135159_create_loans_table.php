@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
             $table->foreignId('member_id')->constrained('members');
+            $table->foreignId('vsla_id')->constrained('vslas');
+            $table->date('done_at')->nullable();
             $table->integer('amount')->default(0);
             $table->timestamps();
             $table->softDeletes();

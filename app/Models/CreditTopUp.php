@@ -10,12 +10,6 @@ class CreditTopUp extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = [
-        'vsla_id',
-        'amount',
-        'done_at',
-    ];
-
     public function vsla(): BelongsTo
     {
         return $this->belongsTo(Vsla::class);

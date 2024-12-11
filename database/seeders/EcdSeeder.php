@@ -28,10 +28,8 @@ class EcdSeeder extends Seeder
 
                 DB::table('ecds')->insert([
                     'name' => $row[0],
-                    'grade' => $row[1] ?: null,
                     'gender' => $row[2] ?: null,
                     'birthday' => $row[3] ?: null,
-                    'academic_year' => $row[4] ?: null,
                     'sector' => $row[5] ?: null,
                     'cell' => $row[6] ?: null,
                     'village' => $row[7] ?: null, // Handle empty value

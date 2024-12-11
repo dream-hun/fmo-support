@@ -6,6 +6,7 @@ use App\Filament\Resources\MemberResource\Pages;
 use App\Models\Member;
 use Exception;
 use Filament\Forms\Components\Actions\Action;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Repeater;
@@ -37,7 +38,7 @@ class MemberResource extends Resource
 {
     protected static ?string $model = Member::class;
 
-    protected static ?string $slug = 'members';
+    protected static ?string $slug = 'micro-credit-beneficiaries';
 
     protected static ?string $recordTitleAttribute = 'name';
 
@@ -52,7 +53,7 @@ class MemberResource extends Resource
                 Group::make()
                     ->schema([
                         Section::make()
-                            ->schema(static::getMemberInformations())
+                            ->schema(static::getMemberInformation())
                             ->columns(2),
 
                         Section::make('Loan Received')
@@ -65,7 +66,7 @@ class MemberResource extends Resource
                                     ->action(fn (Set $set) => $set('items', [])),
                             ])
                             ->schema([
-                                static::loanPaymanet(),
+                                static::getLoanInformation(),
                             ]),
                     ])
                     ->columnSpan(['lg' => fn (?Member $record) => $record === null ? 3 : 2]),
@@ -171,7 +172,7 @@ class MemberResource extends Resource
         return $details;
     }
 
-    private static function getMemberInformations(): array
+    private static function getMemberInformation(): array
     {
         return [
             Select::make('vsla_id')
@@ -193,7 +194,7 @@ class MemberResource extends Resource
                 ->label('Choose gender')
                 ->required(),
 
-            TextInput::make('id_number')->unique()
+            TextInput::make('id_number')->unique('members', 'id_number', fn ($record) => $record)->label('ID Number')
                 ->required()
                 ->maxLength(16)
                 ->minLength(16)
@@ -206,17 +207,24 @@ class MemberResource extends Resource
             TextInput::make('village'),
 
             TextInput::make('mobile'),
-            Select::make('status')->options(['active' => 'Active', 'active_and_transfered' => 'Active And Transfered', 'inactive' => 'Inactive'])->native(false),
+            Select::make('status')->options(['active' => 'Active', 'active_and_transferred' => 'Active And Transferred', 'inactive' => 'Inactive'])->native(false),
             Textarea::make('notes')
                 ->label('Some Notes')
-                ->placeholder('Give us simple useful information. such as why he/she is transfered etc.')
+                ->placeholder('Give us simple useful information. such as why he/she is transferred etc.')
                 ->maxLength(300),
         ];
     }
 
-    private static function loanPaymanet(): Repeater
+    private static function getLoanInformation(): Repeater
     {
         return Repeater::make('loans')->relationship()->schema([
+            Select::make('vsla_id')
+                ->relationship('vsla', 'name')
+                ->preload()
+                ->label('Select Vsla a member belongs in.')
+                ->searchable()
+                ->required(),
+            DatePicker::make('done_at')->native(false)->maxDate(now())->required(),
             TextInput::make('amount')->numeric()->label('Loan Amount'),
 
         ]);

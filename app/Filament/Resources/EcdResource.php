@@ -19,6 +19,7 @@ use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
@@ -88,30 +89,61 @@ class EcdResource extends Resource
                     ->searchable()
                     ->sortable(),
 
-                TextColumn::make('grade')->searchable()->sortable(),
+                TextColumn::make('gender')
+                    ->badge()
+                    ->colors([
+                        'primary' => 'M',
+                        'success' => 'F',
+                    ]),
 
-                TextColumn::make('gender')->searchable()->sortable(),
+                TextColumn::make('academicInformations.academic_year')
+                    ->label('Current Academic Year')
+                    ->sortable(),
 
-                TextColumn::make('academic_year')->searchable()->sortable(),
-
-                TextColumn::make('father_id_number')->searchable(),
-
+                TextColumn::make('academicInformations.status')
+                    ->label('Current Status')
+                    ->badge()
+                    ->colors([
+                        'success' => 'in-progress',
+                        'danger' => 'repeater',
+                        'warning' => 'graduate',
+                    ]),
             ])
             ->filters([
-                SelectFilter::make('grade')->options([
-                    'Baby' => 'Baby',
-                    'Middle' => 'Middle',
-                    'Top' => 'Top',
-                ])->native(false)->placeholder('Select grade'),
-                SelectFilter::make('gender')->options([
-                    'M' => 'Male',
-                    'F' => 'Female',
-                ])->native(false)->placeholder('Select gender'),
+                SelectFilter::make('academicInformations.status')
+                    ->label('Status')
+                    ->relationship('academicInformations', 'status')
+
+                    ->multiple()
+                    ->placeholder('Filter by Status'),
+
+                SelectFilter::make('gender')
+                    ->options([
+                        'M' => 'Male',
+                        'F' => 'Female',
+                    ])
+                    ->native(false)
+                    ->placeholder('Select gender'),
+
+                Filter::make('current_academic_year')
+                    ->query(function ($query, $data) {
+                        if (! empty($data['academic_year'])) {
+                            $query->whereRelation('academicInformations', 'academic_year', '=', $data['academic_year']);
+                        }
+                    })
+                    ->label('Filter by Academic Year')
+                    ->form([
+                        TextInput::make('academic_year')
+                            ->label('Academic Year')
+                            ->placeholder('Enter year'),
+                    ]),
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\ViewAction::make(),
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\DeleteAction::make(),
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -189,6 +221,7 @@ class EcdResource extends Resource
     private static function getEducationInformation(): Repeater
     {
         return Repeater::make('academicInformations')->relationship()->schema([
+
             Select::make('grade')->options([
                 'Baby' => 'Baby',
                 'Middle' => 'Middle',
