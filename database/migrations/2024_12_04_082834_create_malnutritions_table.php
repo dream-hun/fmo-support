@@ -20,9 +20,6 @@ return new class extends Migration
             $table->string('father_name')->nullable();
             $table->string('mother_name')->nullable();
             $table->string('home_phone_number')->nullable();
-            $table->string('entry_muac');
-            $table->string('current_muac');
-            $table->string('status');
             $table->timestamps();
             $table->softDeletes();
         });

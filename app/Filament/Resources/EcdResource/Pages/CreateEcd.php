@@ -8,4 +8,6 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateEcd extends CreateRecord
 {
     protected static string $resource = EcdResource::class;
+
+    protected static ?string $title = 'Add New Student';
 }

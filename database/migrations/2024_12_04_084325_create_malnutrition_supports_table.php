@@ -12,6 +12,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('malnutrition_id')->constrained('malnutritions');
             $table->date('package_reception_date');
+            $table->float('current_muac')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

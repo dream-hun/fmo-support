@@ -11,8 +11,10 @@ class MalnutritionSupport extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'current_muac',
         'malnutrition_id',
         'package_reception_date',
+        'status',
     ];
 
     public function malnutrition(): BelongsTo

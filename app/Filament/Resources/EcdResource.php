@@ -3,6 +3,8 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\EcdResource\Pages;
+use App\Filament\Resources\EcdResource\RelationManagers\AcademicInformationsRelationManager;
+use App\Filament\Resources\EcdResource\Widgets\StatsWidget;
 use App\Models\Ecd;
 use Exception;
 use Filament\Forms\Components\Actions\Action;
@@ -19,7 +21,6 @@ use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
@@ -34,7 +35,9 @@ class EcdResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
 
-    protected static ?string $navigationLabel = 'Ecd Beneficiaries';
+    protected static ?string $navigationLabel = 'Students';
+
+    protected static ?string $navigationGroup = 'Ecd Beneficiaries';
 
     protected static bool $isGloballySearchable = true;
 
@@ -94,28 +97,15 @@ class EcdResource extends Resource
                     ->colors([
                         'primary' => 'M',
                         'success' => 'F',
-                    ]),
+                    ])->sortable(),
 
-                TextColumn::make('academicInformations.academic_year')
-                    ->label('Current Academic Year')
-                    ->sortable(),
+                TextColumn::make('father_name')
+                    ->label('Father')->searchable(),
+                TextColumn::make('mother_name')
+                    ->label('Mother')->searchable(),
 
-                TextColumn::make('academicInformations.status')
-                    ->label('Current Status')
-                    ->badge()
-                    ->colors([
-                        'success' => 'in-progress',
-                        'danger' => 'repeater',
-                        'warning' => 'graduate',
-                    ]),
             ])
             ->filters([
-                SelectFilter::make('academicInformations.status')
-                    ->label('Status')
-                    ->relationship('academicInformations', 'status')
-
-                    ->multiple()
-                    ->placeholder('Filter by Status'),
 
                 SelectFilter::make('gender')
                     ->options([
@@ -125,18 +115,6 @@ class EcdResource extends Resource
                     ->native(false)
                     ->placeholder('Select gender'),
 
-                Filter::make('current_academic_year')
-                    ->query(function ($query, $data) {
-                        if (! empty($data['academic_year'])) {
-                            $query->whereRelation('academicInformations', 'academic_year', '=', $data['academic_year']);
-                        }
-                    })
-                    ->label('Filter by Academic Year')
-                    ->form([
-                        TextInput::make('academic_year')
-                            ->label('Academic Year')
-                            ->placeholder('Enter year'),
-                    ]),
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([
@@ -155,7 +133,15 @@ class EcdResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AcademicInformationsRelationManager::class,
+
+        ];
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            StatsWidget::class,
         ];
     }
 

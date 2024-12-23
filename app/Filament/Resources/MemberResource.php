@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\MemberResource\Pages;
+use App\Filament\Resources\MemberResource\Widgets\MemberStatWidget;
 use App\Models\Member;
 use Exception;
 use Filament\Forms\Components\Actions\Action;
@@ -170,6 +171,13 @@ class MemberResource extends Resource
         }
 
         return $details;
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            MemberStatWidget::class,
+        ];
     }
 
     private static function getMemberInformation(): array

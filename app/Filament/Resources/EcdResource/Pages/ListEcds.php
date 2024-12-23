@@ -15,10 +15,12 @@ class ListEcds extends ListRecords
 {
     protected static string $resource = EcdResource::class;
 
+    protected static ?string $title = 'ECD Beneficiaries';
+
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()->label('Add new student'),
             ExcelImportAction::make()
                 ->color('info')->icon('heroicon-o-arrow-down-on-square-stack'),
             ExportAction::make()
@@ -32,5 +34,10 @@ class ListEcds extends ListRecords
                         ]),
                 ])->color('success')->icon('heroicon-o-arrow-up-on-square-stack'),
         ];
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return EcdResource::getWidgets();
     }
 }

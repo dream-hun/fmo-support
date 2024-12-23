@@ -10,6 +10,8 @@ class EditEcd extends EditRecord
 {
     protected static string $resource = EcdResource::class;
 
+    protected static ?string $title = 'Update Information';
+
     protected function getHeaderActions(): array
     {
         return [

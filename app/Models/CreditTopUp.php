@@ -10,15 +10,12 @@ class CreditTopUp extends Model
 {
     use SoftDeletes;
 
+    protected $casts = [
+        'done_at' => 'date:Y-m-d',
+    ];
+
     public function vsla(): BelongsTo
     {
         return $this->belongsTo(Vsla::class);
-    }
-
-    protected function casts(): array
-    {
-        return [
-            'done_at' => 'date',
-        ];
     }
 }

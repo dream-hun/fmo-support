@@ -10,10 +10,12 @@ class ListCreditTopUps extends ListRecords
 {
     protected static string $resource = CreditTopUpResource::class;
 
+    protected static ?string $title = 'Vsla Top Up';
+
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()->label('Add Top up'),
         ];
     }
 }

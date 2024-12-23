@@ -15,6 +15,8 @@ class ListTrees extends ListRecords
 {
     protected static string $resource = TreeResource::class;
 
+    protected static ?string $title = 'Fruits Trees Beneficiaries';
+
     protected function getHeaderActions(): array
     {
         return [

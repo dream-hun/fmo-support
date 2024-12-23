@@ -25,6 +25,7 @@ use Filament\Tables\Actions\ForceDeleteBulkAction;
 use Filament\Tables\Actions\RestoreAction;
 use Filament\Tables\Actions\RestoreBulkAction;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
@@ -98,14 +99,16 @@ class MalnutritionResource extends Resource
                 TextColumn::make('gender'),
                 TextColumn::make('associated_health_center')->label('Health Center'),
 
-                TextColumn::make('entry_muac'),
-
                 TextColumn::make('current_muac'),
 
                 TextColumn::make('status'),
             ])
             ->filters([
                 TrashedFilter::make(),
+                SelectFilter::make('gender')->label('Gender')->options([
+                    'Male' => 'Male',
+                    'Female' => 'Female',
+                ])->native(false),
             ])
             ->actions([
                 EditAction::make(),
@@ -186,23 +189,37 @@ class MalnutritionResource extends Resource
 
             TextInput::make('home_phone_number'),
 
-            TextInput::make('entry_muac')
-                ->required(),
-
-            TextInput::make('current_muac')
-                ->required(),
-
-            TextInput::make('status')
-                ->required(),
-
         ];
     }
 
     private static function getSupportDetails(): Repeater
     {
         return Repeater::make('malnutritionSupports')->relationship()->schema([
-            DatePicker::make('package_reception_date')->required()->native(false)->maxDate(now()),
+            DatePicker::make('package_reception_date')
+                ->required()
+                ->native(false)
+                ->maxDate(now()),
 
+            TextInput::make('current_muac')
+                ->live() // Enables real-time updates
+                ->required()
+                ->reactive() // Triggers form state changes on update
+                ->afterStateUpdated(function (callable $set, $state) {
+                    if ($state !== null) {
+                        // Logic for setting the status based on `current_muac`
+                        if ($state < 11.5) {
+                            $set('status', 'Severely Malnourished');
+                        } elseif ($state >= 11.5 && $state < 12.5) {
+                            $set('status', 'Moderately Malnourished');
+                        } else {
+                            $set('status', 'Normal');
+                        }
+                    }
+                }),
+
+            TextInput::make('status')
+                ->readOnly() // Makes the field editable programmatically but not by the user
+                ->reactive(), // Makes it respond to state changes
         ]);
     }
 }

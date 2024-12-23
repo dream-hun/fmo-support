@@ -21,9 +21,7 @@ class Malnutrition extends Model
         'father_name',
         'mother_name',
         'home_phone_number',
-        'entry_muac',
-        'current_muac',
-        'status',
+
     ];
 
     public function malnutritionSupports(): HasMany

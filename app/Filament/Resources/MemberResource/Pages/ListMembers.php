@@ -15,11 +15,14 @@ class ListMembers extends ListRecords
 {
     protected static string $resource = MemberResource::class;
 
+    protected static ?string $title = 'All Vslas Members';
+
     protected function getHeaderActions(): array
     {
         return [
-            CreateAction::make(),
+            CreateAction::make()->label('Add New Member'),
             ExcelImportAction::make()
+                ->label('Import Data')
                 ->color('info')->icon('heroicon-o-arrow-down-on-square-stack'),
             ExportAction::make()
                 ->exports([
@@ -30,7 +33,13 @@ class ListMembers extends ListRecords
                         ->withColumns([
                             Column::make('updated_at'),
                         ]),
-                ])->color('success')->icon('heroicon-o-arrow-up-on-square-stack'),
+                ])->color('success')
+                ->label('Export Data')->icon('heroicon-o-arrow-up-on-square-stack'),
         ];
+    }
+
+    public function getHeaderWidgets(): array
+    {
+        return MemberResource::getWidgets();
     }
 }

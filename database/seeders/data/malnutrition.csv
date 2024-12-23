@@ -1,176 +1,176 @@
-name,gender,age_or_months,associated_health_center,sector,cell,village,father_name,mother_name,home_phone_number,entry_muac,current_muac,current _nutrition_color_code
-Mutuyimana Josiane,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Mutuyeyezu Joseph,Mukakarangwa Christine,,12,13,Green
-Mpano Jackson,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,,13,13,Green
-Niyonsaba  Diane,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Havugimana Innocent,Nirere Marie,,11,13,Green
-Niyigena  Gerardine,F,,HC Nyarugenge,Nyarugenge,Murambi,,Hakizimana Charles,Musabyimana Jacqueline,,12.5,13.5,Green
-Mutuyimana Josiane,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Mutuyeyezu Joseph,Mukakarangwa Christine,,12,13,Green
-Uwineza Fiona,F,,Hc Rilima,Rilima,Kabeza,,Nyiranshimiyimana Varelia,Habineza Jean Bosco,,12,12,Yellow
-Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,,12,12,Yellow
-Uwikunda Alice,F,,Hc Rilima,Rilima,Kabeza,,Habimana  Zakayo,Kampire,,13,12,Yellow
-Urinzwenimana  Frugence,M,,Hc Rilima,Rilima,Nyabagendwa,,Nsengiyumva Bertin,Nzayituriki Dorosera,,14,13.5,Green
-Uwimpuhwe Cassy,M,,Hc Rilima,Rilima,Kabeza,,Nsengiyumva  Portase,Nyiranzeyimana Jeanette,,12,13,Green
-Uwingeneye  Kellia,F,,Hc Rilima,Rilima,Kabeza,,Nzabamfa John,Nyirabagenzi Jacqueline,,12.5,12.5,Yellow
-Kamikazi  Noela,F,,Hc Rilima,Rilima,Kimaranzara,,Ndikubwimana Frolent,Nikuze Valantine,,12,14.5,Green
-Uwingeneye  Kellia,F,,Hc Rilima,Rilima,Kabeza,,Nzabanita John,Nyirabagenzi Jacqueline,,12,13.5,Green
-Uwase  Kevine,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814,12,13,Green
-Uwineza Solange,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814,12,13,Green
-Uwiduhaye Ishimwe Diane,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814,12,14,Green
-Uwimpuhwe Cassy,M,,Hc Rilima,Rilima,Kabeza,,Nsengiyumva Protos,Nyiranzeyimana Jeanette,,13,13,Green
-Niyonzima Emile,M,,Hc Rilima,Rilima,Kimaranzara,,Niyonzima,Maniriho Jeanine,,12,12.5,Yellow
-Uwineza Fiona,F,,Hc Rilima,Rilima,Kabeza,,Hacineza Jean Bosco,Nyiranshimiyimana,,12,12,Yellow
-Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,,12,12,Yellow
-Uwase  Kevine,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,,12,13,Green
-Uwineza Solange,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,,12,13,Green
-Uwiduhaye Ishimwe Diane,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,,12,13.5,Green
-Uwineza Fiona,F,,Hc Rilima,Rilima,Special,,Hacineza Jean Bosco,Nyiranshimiyimana,,12,14,Green
-Uwimpuhwe Cassy,F,,Hc Rilima,Rilima,Special,,Nsengiyumva Protos,-,,12,13,Green
-Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Mukandayisenga Donatha,,12.5,13,Green
-Niyomurengezi Aimee,M,,Hc Rilima,Rilima,-,,Bamporineza,-,,12,13,Green
-Nkunzingabo Erineste,M,,Hc Rilima,Rilima,Kabeza,BIRARO,HABUMUGISHA FABIEN,Mukakimenyi Flodonatha,-,11.5,12.5,Yellow
-Cyomoro Aimee Androw,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Niyonsaba Aline,,10,10.5,Red
-Irakoze Kevine,F,,Hc Rilima,Rilima,Nyabagendwa,,-,Uwimana Jeanine,,11,11.5,Red
-Manirafasha Davide,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Yamfashije Donatha,,12,13,Green
-Igihozo  Adia Jolly,F,,Hc Rilima,Rilima,-,,,Nyirahoranimana Dative,,12,13,Green
-Kamikazi  Pria,F,,Hc Rilima,Rilima,Kabeza,,-,Uwase Florence,,12.5,13,Green
-Kwizera  Brayan,M,,Hc Rilima,Rilima,Kabeza,,-,Nzayisenga Gaudance,,13,14,Green
-Irakoze Nathacha,F,,Hc Shyara,Shyara,Kabagugu,,Emmanuel,Dusabimana Solange,,11,0,Red
-Twizerimana Bonheur,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,12,12,Yellow
-Tuyisingize Jean,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,12.5,12,Yellow
-Masengesho  Aimee Chalome,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,,12,12,Yellow
-Tuza  Fred,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Harerimana Gaspard,Mukaremera M.Gorette,,12,12,Yellow
-Kamikazi  Chanella,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuvuga Delphine,,12,12,Yellow
-Dushime  Jean de Dieu,F,,HC Nyarugenge,Nyarugenge,Kabuye,,Havugimana Emmanuel,Vuguziga Dorcella,,13,13,Green
-Niyomugabo  Tangishaka Augstave,F,,HC Nyarugenge,Nyarugenge,Murambi,,Kayonga Thariscisse,Musabyimana Jamilla,,12.5,12.5,Yellow
-Katete Hasiane,F,,HC Nyarugenge,Nyarugenge,Gihinga,,-,Uwimpaye Peragie,,10,10.5,Red
-Igitangaza  Hirwa Kenedy,F,,Hc Rilima,Rilima,Kabeza,,-,Iradukunda Diane,,12,12,Yellow
-Ishimwe   Aimee Jesca,F,,Hc Rilima,Rilima,Kimaranzara,,Namahame Donacien,Nyabenda Evangeline,,13,13,Green
-Ishimwe   Honoline,F,,Hc Rilima,Rilima,Nyabagendwa,,Niringiyimana Viatory,Nikobahoze Daphorose,,7,7,Red
-Manirafasha David,M,,Hc Rilima,Rilima,Nyabagendwa,KAMABUYE,Siborurema Celestin,Yamfashije Donatha,-,6,10,Red
-Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,,11,13,Green
-Irakoze Kevine,F,,Hc Rilima,Rilima,Nyabagendwa,,Bapfakurera Vianney,Uwimana Jeanine,,10.5,11.6,Yellow
-Nyinzingabo Manzi Elineste,M,,Hc Rilima,Rilima,Kabeza,,Habumugisha Fabien,Mukakimenyi Flodonatha,,11,12,Yellow
-Cyomoro Aimee Androw,M,,Hc Rilima,Rilima,Nyabagendwa,,Semana Thadee,Niyonsaba Aliane,,10,10,Red
-Igihozo  Adia Jolly,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Nyirahoranimana Dative,,12,13,Green
-Gikundiro Grancien,M,,Hc Musenyi,Musenyi,Musenyi,,Niringiyimana Damier,Nikuze Sifolla,,11,12,Yellow
-Iganze Jovan,M,,Hc Musenyi,Musenyi,Rulindo,,Rugerero Emmanuel,Mukamana Claudine,,12,12.6,Green
-Mukiza  Yonas,M,,Hc Musenyi,Musenyi,Musenyi,,Gahakwa John,Uwamurera Jeanette,,9,12,Yellow
-Maniratuje Divine,F,,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliana,,11,12,Yellow
-Irasubiza  Rebecca,F,,Hc Musenyi,Musenyi,Rulindo,,Ntibihezwa Damascen,Nyirabariyanga Derina,,12,17,Green
-Iradukunda Jean Baptiste,M,,Hc Musenyi,Musenyi,Gicaca,,Hitimana Celestin,Uwimana Gabdiose,,9,9,Red
-Munezero Larissa,F,,Hc Musenyi,Musenyi,Musenyi,,Bizimana Charles,Mukabaranga Jackeline,,11,11,Red
-Dushime  Jean de Dieu,M,,Hc Nyarugenge,Nyarugenge,Kabuye,,Havugimana Emmanuel,Vuguziga Dorcella,,13,13,Green
-Irakoze Pacifique,M,,Hc Nyarugenge,Nyarugenge,Murambi,,Rwanduha Telesphore,Bagwire Peragie,,11.8,12,Yellow
-Kamikazi  Chanella,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuvuga Delphine,,13,13.5,Green
-Tuyishimire Firmine,F,,Hc Nyarugenge,Nyarugenge,Murambi,,Uwihanganye Nafuta,Muhawenimana Frodette,,12.5,13,Green
-Niyogisubizo Brino,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Musafiri Eric,Ahishakiye Elevanie,,12,12.5,Yellow
-Uwase  Pascaline,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Nsabimana Pascal,Mukarushema Francine,,12,12,Yellow
-Kundwa Emma Queen,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Nsanzimana Emmanuel,Yibwirebyose Beatrice,,12,12,Yellow
-Ishimwe   Kerve,F,,Hc Nyarugenge,Nyarugenge,Muyange,,Karera Stanislus,Nyiratebuka Christine,,12,14,Green
-Dufitimana Prence,M,,Hc Nyarugenge,Nyarugenge,Murambi,,Niyomugabo Hassan,Muhawenimana Clementine,,12,14,Green
-Murekatete Hoziane,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Habimana Thadee,Mukasano Anastasie,,11,12,Yellow
-Twizerimana Drocie Bielve,F,,Hc Nyarugenge,Nyarugenge,Murambi,,Twizerimana Leonard,Wambabariye Gorette,,12.8,13,Green
-Uwamahoro Queen,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Bizimana Vianney,Mukasibo Valeria,,11.5,12,Yellow
-Izibyose Nell Brez,M,,Hc Nyarugenge,Nyarugenge,Kabuye,,Nsengimana Innocent,Mukeshimana Monique,,12,12,Yellow
-Nshimyimukiza Kerve,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Nahayo Andre,Hagenimana Josephine,,12,12.5,Yellow
-Tuza  Fred,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Harerimana Gaspard,Mukaremera M.Gorette,,13.5,13,Green
-Niyibikora Benife,F,,Hc Nyarugenge,Nyarugenge,Rugando,,Birori Pascal,Nyiramasuka Damarce,,13.5,15,Green
-Niyokwizerwa Angel,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ntawiyanga Bizimana,Muhawenimana Vestine,,12.4,12.4,Yellow
-Iradukunda David,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Mubirigi John,Niyonsaba Vestine,,14.2,13,Green
-Niyomungeri Kerve,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,,12.5,12,Yellow
-Mpano Jackson,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,,14,14,Green
-Muhawenimana Diane,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Byimana Celestin,Mukantwari Clementine,,11.3,13,Green
-Mugisha Gift peace,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Hakizimana Emille,Tuyishime Enatha,,13,13,Green
-Sindikubwabo Emmanuel,M,,Hc Nyarugenge,Nyarugenge,Rugando,,Musabyimana Charles,Nyiransengimana Gaudance,,12.5,12.5,Yellow
-Uwineza  Sofia,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Bigirimana Daniel,Nzayisenga Jeanne,,12,12,Yellow
-Iravuga Losine,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Habineza Etienne,Kampire Emmacule,,13,13,Green
-Muhawenimana Losine,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Bigenimana Cypinane,Mukanzasaba Alexie,,12.8,12,Yellow
-Tumukunde  Liliane,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Niyomugabo Hodale,Mukamiza Claudine,,12,12,Yellow
-Ntwari Irakoze,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Harindintwari Joseph,Ayinkamiye Efulasie,,12,12,Yellow
-Igiraneza Kevine,F,,Hc Musenyi,Musenyi,Cyanika,,Uzatsinda Emmanuel,Nirere Antoinette,,12,13,Green
-Mukiza  Janas,M,,Hc Musenyi,Musenyi,Rugeyo,,Gahakwa Jean,Uwamurera Jeanette,,12,12.1,Yellow
-Irakiza Mugisha Vincent,M,,Hc Musenyi,Musenyi,Rugando,,Manirakiza Vincent,Kwitanze Christine,,12,12,Yellow
-Umukundwa Jolie,F,,Hc Musenyi,Musenyi,Rushubi,,Mugisha Frank,Nyirabakenineza,,10,12,Yellow
-Uwase  Kamikazi,F,,Hc Musenyi,Musenyi,Rulindo,,Nsengiyumva Justin,Uwimana Penina,,11.5,12.1,Yellow
-Maniratuje Zakalie,F,,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliane,,11,12,Yellow
-Isingizwe  Denyse,F,,Hc Musenyi,Musenyi,Bishinge,,Gakwaya Faustin,Nyiraminani Sandrine,,12,14,Green
-Gikundiro Grancien,M,,Hc Musenyi,Musenyi,Rugando,,Niringiyimana,Ntamahungiro Debora,,12,12.5,Yellow
-Ntirushwa Mabako Valens,M,,Hc Musenyi,Musenyi,Musenyi,,Nshimyimana Jean Paul,Uwamariya Varelia,,12,12,Yellow
-Uwase  Umuhoza Kevine,F,,Hc Musenyi,Musenyi,Musenyi,,Nsaguye Samusoni,Niyonsenga Esperance,,12,12.4,Yellow
-Munezero Raissa,F,,Hc Musenyi,Musenyi,Musenyi,,Bizimana charles,Mukabaranga Jackeline,,11.8,12,Yellow
-Mutimutije  Eliminate,F,,Hc Musenyi,Musenyi,Rurindo,,Tuyisenge Francois,Ikizanye,,12,14,Green
-Ishimwe   Laurent,M,,Hc Musenyi,Musenyi,Bisenga,,Ntabwo Amusi,Ishimwe Sandra,,11,12,Yellow
-Iradukunda  Jean Baptiste,M,,Hc Musenyi,Musenyi,Gicaca,,Bizimana Celestin,Uwimana Gabdiose,,12,13,Green
-Ineza Teta Ellor,F,,Hc Musenyi,Musenyi,Cyeru,,Nyirantezimana Donatha,-,,9,10,Red
-Niyigena  Pascaline,F,,Hc Musenyi,Musenyi,Rugando,,Dushimirimana Emmanuel,Ndayisenga Immaculee,,12,12.5,Yellow
-Ineza Cheilla,F,,Hc Musenyi,Musenyi,Rwankeri,,Ukurikiyeyezu  Noeli,Karara Marie Jeanne,,12,13,Green
-Hakizimana Valentine,F,,Hc Musenyi,Musenyi,Nyamuri,,Harerimana,Mukakarangwa,,9,10,Red
-Iganze  Jehovanis,F,,Hc Musenyi,Musenyi,Runyoza,,Rugerero Emmanuel,Mukamana,,12,12,Yellow
-Irakoze Manzi Ivan,M,,Hc Musenyi,Musenyi,Nyagihunika,,Ndagijimana Desire,Uwajeneza Sandrine,,9,12,Yellow
-Uwayisenga Grace,F,,Hc Musenyi,Musenyi,Nyagasagara,,Maniragaba Donacien,Uwimana Claudine,,12,12,Yellow
-Iraguha Pierre,M,,Hc Musenyi,Musenyi,Cyanika,,Kabera Pierre,Mukandanga Angelique,,12,13,Green
-Ishimwe   Kellia,F,,Hc Musenyi,Musenyi,Rugando,,Renzaho,Nyirandikubwimana,,12,12,Yellow
-Ninziza Feza Chanceline,F,,Hc Musenyi,Musenyi,Nyagasagara,,Niyodushima,Mukanshuti Julienne,,12,12,Yellow
-Akimana Jeanne,F,,Hc Musenyi,Musenyi,Rulindo,,Ngaruyingoma Jonas,Iradukunda,,11,12,Yellow
-Urikumwenatwe Edisson,M,,Hc Musenyi,Musenyi,Rurindo,,,,,,,
-Irakoze Nathacha,F,,Hc Shyara,Shyara,Rutare,,-,Dusabimana Solange,,11,11,Yellow
-Uwineza Aimee Alice,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye,,12,12.5,Yellow
-TWizerimana Bonheur,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,12,13,Green
-Masengesho   Aimee Shalome,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye,,12,12.5,Yellow
-Tuyisingize Jean,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,12,13,Green
-Uwase  Pascaline,F,,H c Nyarugenge,Nyarugenge,Muyange,,Nsabimana Pascal,Mukarushema Francine,,-,13,Green
-Muhawenimana Diane,F,,H c Nyarugenge,Nyarugenge,Muyange,,Byimana Celestin,Mukantwari Clementine,,-,14,Green
-Kamikazi  Chanella,F,,H c Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuguga Deliphine,,13,14,Green
-Irakoze Pacific,M,,H c Nyarugenge,Nyarugenge,Murambi,,Rwandoha Telesphore,Tuyishimire Charlotte,,11,13,Green
-Muhawenimana Losine,F,,H c Nyarugenge,Nyarugenge,Gihinga,,Bigenimana Cyprien,Mukanzasaba Alexia,,11,12.5,Yellow
-Mpano Jackson,M,,H c Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,,12,12,Yellow
-Nshimyimukiza Kerve,M,,H c Nyarugenge,Nyarugenge,Gihinga,,Nahayo Andree,Hagenimana Josephine,,12,13,Green
-Mureketete Hoziane,F,,H c Nyarugenge,Nyarugenge,Gihinga,,-,Mukansanga Anonciatta,,10,11,Red
-Sindikubwabo Emmanuel,M,,H c Nyarugenge,Nyarugenge,Kamahirwe -Rugando,,Musabyimana Charles,Nyiransengimana Gaudance,,-,13,Green
-Ntwarinduwe Kayonga Roger,M,,H c Nyarugenge,Nyarugenge,Rubona -Ngenda,,Harindintwari Joseph,Ayinkamiye Francine,,-,12.5,Yellow
-Kundwa Aimee Queen,F,,H c Nyarugenge,Nyarugenge,Muyange-Ngenda,,Nsanzimana Emmanuel,Yibwirebyose Breatrice,,-,12.5,Yellow
-Ishimwe   Kevine,F,,H c Nyarugenge,Nyarugenge,Muyange-Ngenda,,Karera Stanslas,Nyiratebuka Christine,,-,14,Green
-Izibyose Nelly,F,,H c Nyarugenge,Nyarugenge,Nyakabingo-Kabuye,,Nsengimana Innocent,Mukeshimana Monique,,--,12.5,Yellow
-Mugisha Peace,F,,H c Nyarugenge,Nyarugenge,Kabuye,,Hakizimana Emille,Tuyishime Lenatha,,12,13,Green
-Gikundiro Gratien,M,18 Months,Hc Musenyi,Musenyi,Rulindo,,Niringiyimana Daniel,Ntamahungiro Deborah,,12.5,12.5,Yellow
-Uwase  Kamikazi,F,13,Hc Musenyi,Musenyi,Rulindo,,Nsengiyumva Justin,Uwimana Penina,,11.5,11.5,Red
-Irakoze Manzi Ivan,M,,Hc Musenyi,Musenyi,Nyakajuri,,Ndagijimana Desire,Uwajeneza Sandrine,,12,12,Yellow
-Umukundwa Jolie,F,,Hc Musenyi,Musenyi,Rushubi,,Mugisha Frank,Nyirabakinineza Priscilla,,12,12,Yellow
-Ishimwe   Kelia,F,3yrs,Hc Musenyi,Musenyi,Musenyi,,Renzaho Michel,Nyirandikubwimana Yvonne,,12,12,Yellow
-Isingizwe  Denyse,F,3yrs,Hc Musenyi,Musenyi,Musenyi,,Gakwaya,Nyiraminani,,11.5,11.5,Red
-Ishimwe   Laurent,M,1yrs,Hc Musenyi,Musenyi,Musenyi,,,Ishimwe Sandra,,12.5,12.5,Yellow
-Mutimutije Eliminatha,F,2 yrs,Hc Musenyi,Musenyi,Kogunga,,Ikizanye,Tuyisenge Froncoise,,13,13,Green
-Uzayisenga Grace,F,12 Months,Hc Musenyi,Musenyi,Musenyi,,Maniragaba,Uwimana Cloudine,,12,12,Yellow
-Uwineza Nizire Kellia,F,12 Months,Hc Musenyi,Musenyi,Cyarika,,Uzatsinda Emmanuel,Nirere Antoinette,,13,13,Green
-Berinayo Patrick,M,12 Months,Hc Musenyi,Musenyi,Gitori,,Shumbusha Emmanuel,Mukasine Judith,,12,12,Yellow
-Niyodusenga  Olivier,M,1 yrs,Hc Musenyi,Musenyi,Musenyi,,-,Ikizanye Florida,,13,13,Green
-Niyogisubizo Regis,M,3 yrs,Hc Musenyi,Musenyi,Rulindo,,Habinshuti nsengiyumva,Akimaniduhaye Vestine,,12,12,Yellow
-Ineza Keziya,F,1 yrs,Hc Musenyi,Musenyi,Gicaca,,Gatera,Mukashyaka,,12,12,Yellow
-Uwimanikunda  Hornoline,F,1yrs,Hc Musenyi,Musenyi,Rulindo,,Bariyanga,Dusabumuremyi,,12,12,Yellow
-Nziranziza Chonceline,F,1yrs,Hc Musenyi,Musenyi,Musenyi,,Niyodushima,Mukanshuti Julienne,,11.5,11.5,Red
-Imaniratuje Divine,F,15 Months,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliana,,14,14,Green
-Niyigena  Pascaline,F,1 yrs,Hc Musenyi,Musenyi,Gicaca,,Dushimimana,Ndayisenga Emmaculee,,11.5,11.5,Red
-Tuyizere  Joselyne,F,1yrs 5Months,Hc Musenyi,Musenyi,Rulindo,,Hakizimana Emmanuel,Kampire Triphine,,13.3,13.3,Green
-Tuyishimire Fabien,M,1yrs 2Months,Hc Musenyi,Musenyi,Gicaca,,Nyandwi,Minani Odetta,,11.5,11.5,Red
-Byosenibikora Breya,F,10Months,Hc Musenyi,Musenyi,Gicaca,,Sibomana,Nyirabikari Denyse,,12,12,Yellow
-Ntirushwamaboko Valens,M,9 Months,Hc Musenyi,Musenyi,Nunga,,Nshimiyimana Jean Paul,Uwamariya Valerie,,12,12,Yellow
-Hakizimana Valentin,M,13 Months,Hc Musenyi,Musenyi,Rulindo,,Harerimana Galasie,Mukakarangwa Chantal,,12.5,12.5,Yellow
-Giraneza Nirere Kevine,F,12Months,Hc Musenyi,Musenyi,Gicca,,Uzatsinda Emmanuel,Nirere Antoinette,,12,12,Yellow
-Ineza Teta  Ella,F,1yrs,Hc Musenyi,Musenyi,Musenyi,,Tuyishimire Eric,Nyiranteziryayo Donatha,,12.5,12.5,Yellow
-Irikumwenatwe Komezusenge Edimo,M,15 Months,Hc Musenyi,Musenyi,Rulindo,,Barura Floriyane,Mukamusoni Console,,12,12,Yellow
-Irasubiza  Rebecca,F,72 Months,Hc Musenyi,Musenyi,Rulindo,,Ntibihezwa Damascen,Nyirabariyanga Penina,,17,17,Green
-Munezero  Raissa,F,15Months,Hc Musenyi,Musenyi,Nyagasagara,,Ntezimana Charles,Mukabaranga Jacqueline,,12,12,Yellow
-Mukiza  Jonas,M,1yrs,Hc Musenyi,Musenyi,Musenyi,,Gahakwa John,Uwamurera Jeanette,,11.5,11.5,Yellow
-Ishimwe   Belyse,F,7Months,Hc Musenyi,Musenyi,Musenyi,,Gakwaya,Nyiraminani Sandrine,,11,11,Red
-Isano king Mucyo Parfait,M,14 Months,Hc Rilima,Rilima,Kimaranzara,,Nzabonimana Theoneste,Mukashyaka Patricia,,12,12,Yellow
-Mutoniwase Thierry Stella,F,28 Months,Hc Rilima,Rilima,Nyabagendwa,MUBUGA,Irakiza Thierry,Muhawenayo Chanseline,791734682,12,12,Yellow
-Ituze Queen Parfait,F,14 Months,Hc Rilima,Rilima,Kimaranzara,KIMARANZARA,Nzabanimana Theoneste,Mukashyaka Patricia,789423104,12,12,Yellow
-Turikumwenayo  Emmanuel,M,23 Months,Hc Rilima,Rilima,Nyabagendwa,MUKOMA,Tugirimana Alphonse,Mukamazimpaka Alice,780152447,12.5,12.5,Yellow
-Abijuru Korimeri,F,10Months,Hc Rilima,Rilima,Nyabagendwa,,Hagenimana Thacien,Nyiranzabahimana,,12,12.5,Yellow
-Uwihanaganye Jean Bosco,M,33Months,Hc Rilima,Rilima,Nyabagendwa,NYAMIZI,Ntawiheba Jean Bosco,Mukandayisenga,783580047,12.5,12.5,Yellow
-Mucyo Frank,M,18Months,Hc Rilima,Rilima,Nyabagendwa,Mukoma,Uwamahirwe Partas,Mukeshimana Diane,783632520,12.5,12.5,Yellow
-Inema Nshuti  Shema,M,17Months,Hc Rilima,Rilima,Kimaranzara,,Rukundo Pasifique,Ntakirutimana Solange,,12,12,Yellow
-Masengesho  Aimee Shalom,F,15 Months,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,,12.5,12.5,Yellow
-Irakoze  Nathacha,F,19 Months,Hc Shyara,Shyara,Kabagugu,,Dusabimana Claude,-,,12.2,12.5,Yellow
-Tuyisingize Jean,M,19 Months,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,13,13,Green
-Twizerimana Bonheur,M,19 Months,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,,13,13,Green
-Uwineza Aimee Alice,F,15 Months,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,,12.5,12.5,Yellow
+name,gender,age_or_months,associated_health_center,sector,cell,village,father_name,mother_name,home_phone_number
+Mutuyimana Josiane,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Mutuyeyezu Joseph,Mukakarangwa Christine,
+Mpano Jackson,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,
+Niyonsaba  Diane,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Havugimana Innocent,Nirere Marie,
+Niyigena  Gerardine,F,,HC Nyarugenge,Nyarugenge,Murambi,,Hakizimana Charles,Musabyimana Jacqueline,
+Mutuyimana Josiane,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Mutuyeyezu Joseph,Mukakarangwa Christine,
+Uwineza Fiona,F,,Hc Rilima,Rilima,Kabeza,,Nyiranshimiyimana Varelia,Habineza Jean Bosco,
+Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,
+Uwikunda Alice,F,,Hc Rilima,Rilima,Kabeza,,Habimana  Zakayo,Kampire,
+Urinzwenimana  Frugence,M,,Hc Rilima,Rilima,Nyabagendwa,,Nsengiyumva Bertin,Nzayituriki Dorosera,
+Uwimpuhwe Cassy,M,,Hc Rilima,Rilima,Kabeza,,Nsengiyumva  Portase,Nyiranzeyimana Jeanette,
+Uwingeneye  Kellia,F,,Hc Rilima,Rilima,Kabeza,,Nzabamfa John,Nyirabagenzi Jacqueline,
+Kamikazi  Noela,F,,Hc Rilima,Rilima,Kimaranzara,,Ndikubwimana Frolent,Nikuze Valantine,
+Uwingeneye  Kellia,F,,Hc Rilima,Rilima,Kabeza,,Nzabanita John,Nyirabagenzi Jacqueline,
+Uwase  Kevine,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814
+Uwineza Solange,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814
+Uwiduhaye Ishimwe Diane,F,,Hc Rilima,Rilima,Kabeza,GICACA,Ntirivamunda Fabien,Mukanyangezi Jacqueline,728273814
+Uwimpuhwe Cassy,M,,Hc Rilima,Rilima,Kabeza,,Nsengiyumva Protos,Nyiranzeyimana Jeanette,
+Niyonzima Emile,M,,Hc Rilima,Rilima,Kimaranzara,,Niyonzima,Maniriho Jeanine,
+Uwineza Fiona,F,,Hc Rilima,Rilima,Kabeza,,Hacineza Jean Bosco,Nyiranshimiyimana,
+Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,
+Uwase  Kevine,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,
+Uwineza Solange,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,
+Uwiduhaye Ishimwe Diane,F,,Hc Rilima,Rilima,Special,,Ntirivamunda Fabien,Mukanyangezi Jacqueline,
+Uwineza Fiona,F,,Hc Rilima,Rilima,Special,,Hacineza Jean Bosco,Nyiranshimiyimana,
+Uwimpuhwe Cassy,F,,Hc Rilima,Rilima,Special,,Nsengiyumva Protos,-,
+Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Mukandayisenga Donatha,
+Niyomurengezi Aimee,M,,Hc Rilima,Rilima,-,,Bamporineza,-,
+Nkunzingabo Erineste,M,,Hc Rilima,Rilima,Kabeza,BIRARO,HABUMUGISHA FABIEN,Mukakimenyi Flodonatha,-
+Cyomoro Aimee Androw,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Niyonsaba Aline,
+Irakoze Kevine,F,,Hc Rilima,Rilima,Nyabagendwa,,-,Uwimana Jeanine,
+Manirafasha Davide,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Yamfashije Donatha,
+Igihozo  Adia Jolly,F,,Hc Rilima,Rilima,-,,,Nyirahoranimana Dative,
+Kamikazi  Pria,F,,Hc Rilima,Rilima,Kabeza,,-,Uwase Florence,
+Kwizera  Brayan,M,,Hc Rilima,Rilima,Kabeza,,-,Nzayisenga Gaudance,
+Irakoze Nathacha,F,,Hc Shyara,Shyara,Kabagugu,,Emmanuel,Dusabimana Solange,
+Twizerimana Bonheur,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Tuyisingize Jean,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Masengesho  Aimee Chalome,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,
+Tuza  Fred,M,,HC Nyarugenge,Nyarugenge,Gihinga,,Harerimana Gaspard,Mukaremera M.Gorette,
+Kamikazi  Chanella,F,,HC Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuvuga Delphine,
+Dushime  Jean de Dieu,F,,HC Nyarugenge,Nyarugenge,Kabuye,,Havugimana Emmanuel,Vuguziga Dorcella,
+Niyomugabo  Tangishaka Augstave,F,,HC Nyarugenge,Nyarugenge,Murambi,,Kayonga Thariscisse,Musabyimana Jamilla,
+Katete Hasiane,F,,HC Nyarugenge,Nyarugenge,Gihinga,,-,Uwimpaye Peragie,
+Igitangaza  Hirwa Kenedy,F,,Hc Rilima,Rilima,Kabeza,,-,Iradukunda Diane,
+Ishimwe   Aimee Jesca,F,,Hc Rilima,Rilima,Kimaranzara,,Namahame Donacien,Nyabenda Evangeline,
+Ishimwe   Honoline,F,,Hc Rilima,Rilima,Nyabagendwa,,Niringiyimana Viatory,Nikobahoze Daphorose,
+Manirafasha David,M,,Hc Rilima,Rilima,Nyabagendwa,KAMABUYE,Siborurema Celestin,Yamfashije Donatha,-
+Uwihanganye Jean Bosco,M,,Hc Rilima,Rilima,Nyabagendwa,,Ntawiheba Jean Bosco,Mukandayisenga Donatha,
+Irakoze Kevine,F,,Hc Rilima,Rilima,Nyabagendwa,,Bapfakurera Vianney,Uwimana Jeanine,
+Nyinzingabo Manzi Elineste,M,,Hc Rilima,Rilima,Kabeza,,Habumugisha Fabien,Mukakimenyi Flodonatha,
+Cyomoro Aimee Androw,M,,Hc Rilima,Rilima,Nyabagendwa,,Semana Thadee,Niyonsaba Aliane,
+Igihozo  Adia Jolly,M,,Hc Rilima,Rilima,Nyabagendwa,,-,Nyirahoranimana Dative,
+Gikundiro Grancien,M,,Hc Musenyi,Musenyi,Musenyi,,Niringiyimana Damier,Nikuze Sifolla,
+Iganze Jovan,M,,Hc Musenyi,Musenyi,Rulindo,,Rugerero Emmanuel,Mukamana Claudine,
+Mukiza  Yonas,M,,Hc Musenyi,Musenyi,Musenyi,,Gahakwa John,Uwamurera Jeanette,
+Maniratuje Divine,F,,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliana,
+Irasubiza  Rebecca,F,,Hc Musenyi,Musenyi,Rulindo,,Ntibihezwa Damascen,Nyirabariyanga Derina,
+Iradukunda Jean Baptiste,M,,Hc Musenyi,Musenyi,Gicaca,,Hitimana Celestin,Uwimana Gabdiose,
+Munezero Larissa,F,,Hc Musenyi,Musenyi,Musenyi,,Bizimana Charles,Mukabaranga Jackeline,
+Dushime  Jean de Dieu,M,,Hc Nyarugenge,Nyarugenge,Kabuye,,Havugimana Emmanuel,Vuguziga Dorcella,
+Irakoze Pacifique,M,,Hc Nyarugenge,Nyarugenge,Murambi,,Rwanduha Telesphore,Bagwire Peragie,
+Kamikazi  Chanella,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuvuga Delphine,
+Tuyishimire Firmine,F,,Hc Nyarugenge,Nyarugenge,Murambi,,Uwihanganye Nafuta,Muhawenimana Frodette,
+Niyogisubizo Brino,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Musafiri Eric,Ahishakiye Elevanie,
+Uwase  Pascaline,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Nsabimana Pascal,Mukarushema Francine,
+Kundwa Emma Queen,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Nsanzimana Emmanuel,Yibwirebyose Beatrice,
+Ishimwe   Kerve,F,,Hc Nyarugenge,Nyarugenge,Muyange,,Karera Stanislus,Nyiratebuka Christine,
+Dufitimana Prence,M,,Hc Nyarugenge,Nyarugenge,Murambi,,Niyomugabo Hassan,Muhawenimana Clementine,
+Murekatete Hoziane,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Habimana Thadee,Mukasano Anastasie,
+Twizerimana Drocie Bielve,F,,Hc Nyarugenge,Nyarugenge,Murambi,,Twizerimana Leonard,Wambabariye Gorette,
+Uwamahoro Queen,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Bizimana Vianney,Mukasibo Valeria,
+Izibyose Nell Brez,M,,Hc Nyarugenge,Nyarugenge,Kabuye,,Nsengimana Innocent,Mukeshimana Monique,
+Nshimyimukiza Kerve,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Nahayo Andre,Hagenimana Josephine,
+Tuza  Fred,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Harerimana Gaspard,Mukaremera M.Gorette,
+Niyibikora Benife,F,,Hc Nyarugenge,Nyarugenge,Rugando,,Birori Pascal,Nyiramasuka Damarce,
+Niyokwizerwa Angel,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ntawiyanga Bizimana,Muhawenimana Vestine,
+Iradukunda David,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Mubirigi John,Niyonsaba Vestine,
+Niyomungeri Kerve,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,
+Mpano Jackson,M,,Hc Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,
+Muhawenimana Diane,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Byimana Celestin,Mukantwari Clementine,
+Mugisha Gift peace,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Hakizimana Emille,Tuyishime Enatha,
+Sindikubwabo Emmanuel,M,,Hc Nyarugenge,Nyarugenge,Rugando,,Musabyimana Charles,Nyiransengimana Gaudance,
+Uwineza  Sofia,F,,Hc Nyarugenge,Nyarugenge,Kabuye,,Bigirimana Daniel,Nzayisenga Jeanne,
+Iravuga Losine,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Habineza Etienne,Kampire Emmacule,
+Muhawenimana Losine,F,,Hc Nyarugenge,Nyarugenge,Gihinga,,Bigenimana Cypinane,Mukanzasaba Alexie,
+Tumukunde  Liliane,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Niyomugabo Hodale,Mukamiza Claudine,
+Ntwari Irakoze,F,,Hc Nyarugenge,Nyarugenge,Ngenda,,Harindintwari Joseph,Ayinkamiye Efulasie,
+Igiraneza Kevine,F,,Hc Musenyi,Musenyi,Cyanika,,Uzatsinda Emmanuel,Nirere Antoinette,
+Mukiza  Janas,M,,Hc Musenyi,Musenyi,Rugeyo,,Gahakwa Jean,Uwamurera Jeanette,
+Irakiza Mugisha Vincent,M,,Hc Musenyi,Musenyi,Rugando,,Manirakiza Vincent,Kwitanze Christine,
+Umukundwa Jolie,F,,Hc Musenyi,Musenyi,Rushubi,,Mugisha Frank,Nyirabakenineza,
+Uwase  Kamikazi,F,,Hc Musenyi,Musenyi,Rulindo,,Nsengiyumva Justin,Uwimana Penina,
+Maniratuje Zakalie,F,,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliane,
+Isingizwe  Denyse,F,,Hc Musenyi,Musenyi,Bishinge,,Gakwaya Faustin,Nyiraminani Sandrine,
+Gikundiro Grancien,M,,Hc Musenyi,Musenyi,Rugando,,Niringiyimana,Ntamahungiro Debora,
+Ntirushwa Mabako Valens,M,,Hc Musenyi,Musenyi,Musenyi,,Nshimyimana Jean Paul,Uwamariya Varelia,
+Uwase  Umuhoza Kevine,F,,Hc Musenyi,Musenyi,Musenyi,,Nsaguye Samusoni,Niyonsenga Esperance,
+Munezero Raissa,F,,Hc Musenyi,Musenyi,Musenyi,,Bizimana charles,Mukabaranga Jackeline,
+Mutimutije  Eliminate,F,,Hc Musenyi,Musenyi,Rurindo,,Tuyisenge Francois,Ikizanye,
+Ishimwe   Laurent,M,,Hc Musenyi,Musenyi,Bisenga,,Ntabwo Amusi,Ishimwe Sandra,
+Iradukunda  Jean Baptiste,M,,Hc Musenyi,Musenyi,Gicaca,,Bizimana Celestin,Uwimana Gabdiose,
+Ineza Teta Ellor,F,,Hc Musenyi,Musenyi,Cyeru,,Nyirantezimana Donatha,-,
+Niyigena  Pascaline,F,,Hc Musenyi,Musenyi,Rugando,,Dushimirimana Emmanuel,Ndayisenga Immaculee,
+Ineza Cheilla,F,,Hc Musenyi,Musenyi,Rwankeri,,Ukurikiyeyezu  Noeli,Karara Marie Jeanne,
+Hakizimana Valentine,F,,Hc Musenyi,Musenyi,Nyamuri,,Harerimana,Mukakarangwa,
+Iganze  Jehovanis,F,,Hc Musenyi,Musenyi,Runyoza,,Rugerero Emmanuel,Mukamana,
+Irakoze Manzi Ivan,M,,Hc Musenyi,Musenyi,Nyagihunika,,Ndagijimana Desire,Uwajeneza Sandrine,
+Uwayisenga Grace,F,,Hc Musenyi,Musenyi,Nyagasagara,,Maniragaba Donacien,Uwimana Claudine,
+Iraguha Pierre,M,,Hc Musenyi,Musenyi,Cyanika,,Kabera Pierre,Mukandanga Angelique,
+Ishimwe   Kellia,F,,Hc Musenyi,Musenyi,Rugando,,Renzaho,Nyirandikubwimana,
+Ninziza Feza Chanceline,F,,Hc Musenyi,Musenyi,Nyagasagara,,Niyodushima,Mukanshuti Julienne,
+Akimana Jeanne,F,,Hc Musenyi,Musenyi,Rulindo,,Ngaruyingoma Jonas,Iradukunda,
+Urikumwenatwe Edisson,M,,Hc Musenyi,Musenyi,Rurindo,,,,
+Irakoze Nathacha,F,,Hc Shyara,Shyara,Rutare,,-,Dusabimana Solange,
+Uwineza Aimee Alice,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye,
+TWizerimana Bonheur,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Masengesho   Aimee Shalome,F,,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye,
+Tuyisingize Jean,M,,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Uwase  Pascaline,F,,H c Nyarugenge,Nyarugenge,Muyange,,Nsabimana Pascal,Mukarushema Francine,
+Muhawenimana Diane,F,,H c Nyarugenge,Nyarugenge,Muyange,,Byimana Celestin,Mukantwari Clementine,
+Kamikazi  Chanella,F,,H c Nyarugenge,Nyarugenge,Gihinga,,Sindikubwabo Jean Pierre,Ujyakuguga Deliphine,
+Irakoze Pacific,M,,H c Nyarugenge,Nyarugenge,Murambi,,Rwandoha Telesphore,Tuyishimire Charlotte,
+Muhawenimana Losine,F,,H c Nyarugenge,Nyarugenge,Gihinga,,Bigenimana Cyprien,Mukanzasaba Alexia,
+Mpano Jackson,M,,H c Nyarugenge,Nyarugenge,Gihinga,,Ndayisenga Athanase,Uwimana Fortune,
+Nshimyimukiza Kerve,M,,H c Nyarugenge,Nyarugenge,Gihinga,,Nahayo Andree,Hagenimana Josephine,
+Mureketete Hoziane,F,,H c Nyarugenge,Nyarugenge,Gihinga,,-,Mukansanga Anonciatta,
+Sindikubwabo Emmanuel,M,,H c Nyarugenge,Nyarugenge,Kamahirwe -Rugando,,Musabyimana Charles,Nyiransengimana Gaudance,
+Ntwarinduwe Kayonga Roger,M,,H c Nyarugenge,Nyarugenge,Rubona -Ngenda,,Harindintwari Joseph,Ayinkamiye Francine,
+Kundwa Aimee Queen,F,,H c Nyarugenge,Nyarugenge,Muyange-Ngenda,,Nsanzimana Emmanuel,Yibwirebyose Breatrice,
+Ishimwe   Kevine,F,,H c Nyarugenge,Nyarugenge,Muyange-Ngenda,,Karera Stanslas,Nyiratebuka Christine,
+Izibyose Nelly,F,,H c Nyarugenge,Nyarugenge,Nyakabingo-Kabuye,,Nsengimana Innocent,Mukeshimana Monique,
+Mugisha Peace,F,,H c Nyarugenge,Nyarugenge,Kabuye,,Hakizimana Emille,Tuyishime Lenatha,
+Gikundiro Gratien,M,18 Months,Hc Musenyi,Musenyi,Rulindo,,Niringiyimana Daniel,Ntamahungiro Deborah,
+Uwase  Kamikazi,F,13,Hc Musenyi,Musenyi,Rulindo,,Nsengiyumva Justin,Uwimana Penina,
+Irakoze Manzi Ivan,M,,Hc Musenyi,Musenyi,Nyakajuri,,Ndagijimana Desire,Uwajeneza Sandrine,
+Umukundwa Jolie,F,,Hc Musenyi,Musenyi,Rushubi,,Mugisha Frank,Nyirabakinineza Priscilla,
+Ishimwe   Kelia,F,3yrs,Hc Musenyi,Musenyi,Musenyi,,Renzaho Michel,Nyirandikubwimana Yvonne,
+Isingizwe  Denyse,F,3yrs,Hc Musenyi,Musenyi,Musenyi,,Gakwaya,Nyiraminani,
+Ishimwe   Laurent,M,1yrs,Hc Musenyi,Musenyi,Musenyi,,,Ishimwe Sandra,
+Mutimutije Eliminatha,F,2 yrs,Hc Musenyi,Musenyi,Kogunga,,Ikizanye,Tuyisenge Froncoise,
+Uzayisenga Grace,F,12 Months,Hc Musenyi,Musenyi,Musenyi,,Maniragaba,Uwimana Cloudine,
+Uwineza Nizire Kellia,F,12 Months,Hc Musenyi,Musenyi,Cyarika,,Uzatsinda Emmanuel,Nirere Antoinette,
+Berinayo Patrick,M,12 Months,Hc Musenyi,Musenyi,Gitori,,Shumbusha Emmanuel,Mukasine Judith,
+Niyodusenga  Olivier,M,1 yrs,Hc Musenyi,Musenyi,Musenyi,,-,Ikizanye Florida,
+Niyogisubizo Regis,M,3 yrs,Hc Musenyi,Musenyi,Rulindo,,Habinshuti nsengiyumva,Akimaniduhaye Vestine,
+Ineza Keziya,F,1 yrs,Hc Musenyi,Musenyi,Gicaca,,Gatera,Mukashyaka,
+Uwimanikunda  Hornoline,F,1yrs,Hc Musenyi,Musenyi,Rulindo,,Bariyanga,Dusabumuremyi,
+Nziranziza Chonceline,F,1yrs,Hc Musenyi,Musenyi,Musenyi,,Niyodushima,Mukanshuti Julienne,
+Imaniratuje Divine,F,15 Months,Hc Musenyi,Musenyi,Nyagasagara,,Hakizimana Zakalie,Mukeshimana Eliana,
+Niyigena  Pascaline,F,1 yrs,Hc Musenyi,Musenyi,Gicaca,,Dushimimana,Ndayisenga Emmaculee,
+Tuyizere  Joselyne,F,1yrs 5Months,Hc Musenyi,Musenyi,Rulindo,,Hakizimana Emmanuel,Kampire Triphine,
+Tuyishimire Fabien,M,1yrs 2Months,Hc Musenyi,Musenyi,Gicaca,,Nyandwi,Minani Odetta,
+Byosenibikora Breya,F,10Months,Hc Musenyi,Musenyi,Gicaca,,Sibomana,Nyirabikari Denyse,
+Ntirushwamaboko Valens,M,9 Months,Hc Musenyi,Musenyi,Nunga,,Nshimiyimana Jean Paul,Uwamariya Valerie,
+Hakizimana Valentin,M,13 Months,Hc Musenyi,Musenyi,Rulindo,,Harerimana Galasie,Mukakarangwa Chantal,
+Giraneza Nirere Kevine,F,12Months,Hc Musenyi,Musenyi,Gicca,,Uzatsinda Emmanuel,Nirere Antoinette,
+Ineza Teta  Ella,F,1yrs,Hc Musenyi,Musenyi,Musenyi,,Tuyishimire Eric,Nyiranteziryayo Donatha,
+Irikumwenatwe Komezusenge Edimo,M,15 Months,Hc Musenyi,Musenyi,Rulindo,,Barura Floriyane,Mukamusoni Console,
+Irasubiza  Rebecca,F,72 Months,Hc Musenyi,Musenyi,Rulindo,,Ntibihezwa Damascen,Nyirabariyanga Penina,
+Munezero  Raissa,F,15Months,Hc Musenyi,Musenyi,Nyagasagara,,Ntezimana Charles,Mukabaranga Jacqueline,
+Mukiza  Jonas,M,1yrs,Hc Musenyi,Musenyi,Musenyi,,Gahakwa John,Uwamurera Jeanette,
+Ishimwe   Belyse,F,7Months,Hc Musenyi,Musenyi,Musenyi,,Gakwaya,Nyiraminani Sandrine,
+Isano king Mucyo Parfait,M,14 Months,Hc Rilima,Rilima,Kimaranzara,,Nzabonimana Theoneste,Mukashyaka Patricia,
+Mutoniwase Thierry Stella,F,28 Months,Hc Rilima,Rilima,Nyabagendwa,MUBUGA,Irakiza Thierry,Muhawenayo Chanseline,791734682
+Ituze Queen Parfait,F,14 Months,Hc Rilima,Rilima,Kimaranzara,KIMARANZARA,Nzabanimana Theoneste,Mukashyaka Patricia,789423104
+Turikumwenayo  Emmanuel,M,23 Months,Hc Rilima,Rilima,Nyabagendwa,MUKOMA,Tugirimana Alphonse,Mukamazimpaka Alice,780152447
+Abijuru Korimeri,F,10Months,Hc Rilima,Rilima,Nyabagendwa,,Hagenimana Thacien,Nyiranzabahimana,
+Uwihanaganye Jean Bosco,M,33Months,Hc Rilima,Rilima,Nyabagendwa,NYAMIZI,Ntawiheba Jean Bosco,Mukandayisenga,783580047
+Mucyo Frank,M,18Months,Hc Rilima,Rilima,Nyabagendwa,Mukoma,Uwamahirwe Partas,Mukeshimana Diane,783632520
+Inema Nshuti  Shema,M,17Months,Hc Rilima,Rilima,Kimaranzara,,Rukundo Pasifique,Ntakirutimana Solange,
+Masengesho  Aimee Shalom,F,15 Months,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,
+Irakoze  Nathacha,F,19 Months,Hc Shyara,Shyara,Kabagugu,,Dusabimana Claude,-,
+Tuyisingize Jean,M,19 Months,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Twizerimana Bonheur,M,19 Months,Hc Shyara,Shyara,Rebero,,Sibomana Jean Claude,Mukeshimana Agnes,
+Uwineza Aimee Alice,F,15 Months,Hc Shyara,Shyara,Rebero,,Urayeneza Emmanuel,Nyirambaruramye Rachel,
