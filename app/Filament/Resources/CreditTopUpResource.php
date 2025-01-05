@@ -18,6 +18,7 @@ class CreditTopUpResource extends Resource
     protected static ?string $model = CreditTopUp::class;
 
     protected static ?string $slug = 'vslas-top-ups';
+    protected static ?string $navigationLabel='Vslas Top Up';
 
     protected static ?string $navigationIcon = 'heroicon-o-banknotes';
 
