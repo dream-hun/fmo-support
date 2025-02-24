@@ -7,9 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class MalnutritionSeeder extends Seeder
 {
-    /**
-     * Seed the members table with data from a CSV file.
-     */
     public function run(): void
     {
         $csvFile = database_path('seeders/data/malnutrition.csv');
@@ -37,27 +34,37 @@ class MalnutritionSeeder extends Seeder
         }
 
         $newRecords = [];
+        $rowNumber = 1; // Start after header
 
         while (($row = fgetcsv($handle)) !== false) {
+            $rowNumber++;
 
-            $newRecords[] = [
-                'name' => $row[0],
-                'gender' => $row[1],
-                'age_or_months' => $row[2] ?: null,
-                'associated_health_center' => $row[3],
-                'sector' => $row[4],
-                'cell' => $row[5],
-                'village' => $row[6] ?: null,
-                'father_name' => $row[7],
-                'mother_name' => $row[8],
-                'home_phone_number' => $this->phoneNumberFormat($row[9]),
-                'entry_muac' => $row[10],
-                'current_muac' => $row[11],
-                'status' => $row[12],
-                'created_at' => now(),
-                'updated_at' => now(),
-            ];
+            // Ensure the row has enough columns
+            $row = array_pad($row, 10, null);
 
+            try {
+                $newRecords[] = [
+                    'name' => $row[0] ?? null,
+                    'gender' => $row[1] ?? null,
+                    'age_or_months' => $row[2] ?? null,
+                    'associated_health_center' => $row[3] ?? null,
+                    'sector' => $row[4] ?? null,
+                    'cell' => $row[5] ?? null,
+                    'village' => $row[6] ?? null,
+                    'father_name' => $row[7] ?? null,
+                    'mother_name' => $row[8] ?? null,
+                    'home_phone_number' => $this->phoneNumberFormat($row[9] ?? ''),
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ];
+            } catch (\Exception $e) {
+                $this->command->warn("Error processing row {$rowNumber}: ".$e->getMessage());
+                \Log::warning('Malformed CSV row', [
+                    'row_number' => $rowNumber,
+                    'row_data' => $row,
+                    'error' => $e->getMessage(),
+                ]);
+            }
         }
 
         fclose($handle);
@@ -70,11 +77,12 @@ class MalnutritionSeeder extends Seeder
         }
     }
 
-    /**
-     * Format phone numbers to standard Rwandan phone numbers.
-     */
-    private function phoneNumberFormat(string $phoneNumber): string
+    private function phoneNumberFormat(?string $phoneNumber): string
     {
+        if (empty($phoneNumber)) {
+            return '';
+        }
+
         // Remove non-numeric characters
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
 

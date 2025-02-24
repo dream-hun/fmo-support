@@ -55,9 +55,9 @@ class ZamukaSeeder extends Seeder
         if (empty($number)) {
             return null;
         }
-        //Remove any non-numeric characters
+        // Remove any non-numeric characters
         $number = preg_replace('/[^0-9]/', '', $number);
-        //If number starts with 7 add rwanda country code
+        // If number starts with 7 add rwanda country code
         if (strlen($number) == 9 && str_starts_with($number, '7')) {
             return '+250'.$number;
         }

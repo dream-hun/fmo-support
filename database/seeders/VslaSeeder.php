@@ -53,9 +53,9 @@ class VslaSeeder extends Seeder
         if (empty($phoneNumber)) {
             return '';
         }
-        //Remove any non-numeric characters
+        // Remove any non-numeric characters
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
-        //Add rwandan country code
+        // Add rwandan country code
         if (strlen($phoneNumber) == 9 && str_starts_with($phoneNumber, '7')) {
             return '+250'.$phoneNumber;
         }

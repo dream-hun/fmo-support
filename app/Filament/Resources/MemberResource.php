@@ -176,7 +176,7 @@ class MemberResource extends Resource
     public static function getWidgets(): array
     {
         return [
-           // MemberStatWidget::class,
+            // MemberStatWidget::class,
         ];
     }
 
